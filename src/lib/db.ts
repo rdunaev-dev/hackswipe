@@ -387,6 +387,28 @@ export async function getFullStats(round?: number) {
   return { totalVoters, round: currentRound, projects: result };
 }
 
+// ─── Admin: reset user ───
+
+export async function resetUserData(targetEmail: string) {
+  await ensureSchema();
+  const sql = getSql();
+  const email = targetEmail.toLowerCase();
+  const sessRows = await sql`SELECT id FROM sessions WHERE email = ${email}`;
+  const sessionIds = sessRows.map((r) => r.id as string);
+  if (sessionIds.length === 0) return { deleted: 0 };
+
+  let deletedVotes = 0;
+  let deletedSwipes = 0;
+  for (const sid of sessionIds) {
+    const vr = await sql`DELETE FROM votes WHERE session_id = ${sid}`;
+    deletedVotes += vr.count;
+    const sr = await sql`DELETE FROM swipes WHERE session_id = ${sid}`;
+    deletedSwipes += sr.count;
+  }
+  const dr = await sql`DELETE FROM sessions WHERE email = ${email}`;
+  return { deletedSessions: dr.count, deletedSwipes, deletedVotes };
+}
+
 // ─── Seed from JSON ───
 
 export async function seedFromJson(projects: Project[]) {

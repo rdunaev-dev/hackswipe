@@ -6,6 +6,7 @@ import {
   setCurrentRound,
   setFinalists,
   getFinalists,
+  resetUserData,
 } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
@@ -36,7 +37,8 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Forbidden" }, { status: 403 });
   }
 
-  const { action } = (await req.json()) as { action: string };
+  const body = (await req.json()) as { action: string; email?: string };
+  const { action } = body;
 
   if (action === "start_round_2") {
     const currentRound = await getCurrentRound();
@@ -81,6 +83,15 @@ export async function POST(req: NextRequest) {
     await setCurrentRound(1);
     await setFinalists([]);
     return NextResponse.json({ ok: true });
+  }
+
+  if (action === "reset_user") {
+    const targetEmail = body.email;
+    if (!targetEmail) {
+      return NextResponse.json({ error: "email required" }, { status: 400 });
+    }
+    const result = await resetUserData(targetEmail);
+    return NextResponse.json({ ok: true, ...result });
   }
 
   return NextResponse.json({ error: "Unknown action" }, { status: 400 });
