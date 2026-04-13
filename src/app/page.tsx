@@ -13,9 +13,17 @@ export default function WelcomePage() {
   const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
-    if (isAuthenticated) {
-      router.push("/swipe");
-    }
+    if (!isAuthenticated) return;
+    fetch("/api/feed")
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.status === "completed") {
+          router.push("/done");
+        } else {
+          router.push("/swipe");
+        }
+      })
+      .catch(() => router.push("/swipe"));
   }, [isAuthenticated, router]);
 
   async function handleSubmit(e: React.FormEvent) {

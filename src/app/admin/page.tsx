@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useAuth } from "@/hooks/useAuth";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
@@ -18,6 +18,9 @@ interface ProjectStat {
 
 interface StatsData {
   totalVoters: number;
+  round: number;
+  currentRound: number;
+  finalists: string[];
   projects: ProjectStat[];
 }
 
@@ -27,10 +30,14 @@ export default function AdminPage() {
   const [stats, setStats] = useState<StatsData | null>(null);
   const [loading, setLoading] = useState(true);
   const [forbidden, setForbidden] = useState(false);
+  const [roundFilter, setRoundFilter] = useState<number | undefined>(undefined);
+  const [actionLoading, setActionLoading] = useState(false);
+  const [confirmAction, setConfirmAction] = useState<string | null>(null);
 
-  async function fetchStats() {
+  const fetchStats = useCallback(async (round?: number) => {
     try {
-      const res = await fetch("/api/stats");
+      const url = round !== undefined ? `/api/stats?round=${round}` : "/api/stats";
+      const res = await fetch(url);
       if (res.status === 403) {
         setForbidden(true);
         setLoading(false);
@@ -47,7 +54,7 @@ export default function AdminPage() {
     } finally {
       setLoading(false);
     }
-  }
+  }, [router]);
 
   useEffect(() => {
     if (authLoading) return;
@@ -55,26 +62,51 @@ export default function AdminPage() {
       router.replace("/");
       return;
     }
-    fetchStats();
-    const interval = setInterval(fetchStats, 10_000);
+    fetchStats(roundFilter);
+    const interval = setInterval(() => fetchStats(roundFilter), 10_000);
     return () => clearInterval(interval);
-  }, [authLoading, isAuthenticated, router]);
+  }, [authLoading, isAuthenticated, router, roundFilter, fetchStats]);
+
+  async function handleAction(action: string) {
+    setActionLoading(true);
+    try {
+      const res = await fetch("/api/stats", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action }),
+      });
+      const data = await res.json();
+      if (data.ok) {
+        setConfirmAction(null);
+        await fetchStats(roundFilter);
+      } else {
+        alert(data.error || "Action failed");
+      }
+    } catch {
+      alert("Network error");
+    } finally {
+      setActionLoading(false);
+    }
+  }
 
   if (forbidden) {
     return (
       <div className="min-h-screen bg-card-dark flex items-center justify-center">
         <div className="text-center">
-          <span className="text-4xl mb-4 block">🔒</span>
+          <span className="text-4xl mb-4 block">&#x1f512;</span>
           <p className="text-slate-400">Доступ запрещён</p>
         </div>
       </div>
     );
   }
 
+  const currentRound = stats?.currentRound ?? 1;
+  const finalistSet = new Set(stats?.finalists ?? []);
+
   return (
     <div className="min-h-screen bg-card-dark p-4 sm:p-8 overflow-auto">
       <div className="max-w-4xl mx-auto">
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex items-center justify-between mb-4">
           <div>
             <h1 className="text-2xl font-bold text-white">HackSwipe Admin</h1>
             <p className="text-sm text-slate-500 mt-1">
@@ -82,11 +114,106 @@ export default function AdminPage() {
             </p>
           </div>
           <button
-            onClick={fetchStats}
+            onClick={() => fetchStats(roundFilter)}
             className="px-4 py-2 rounded-xl text-sm glass text-slate-300 hover:text-white transition-colors"
           >
             Обновить
           </button>
+        </div>
+
+        {/* Round indicator + controls */}
+        <div className="flex flex-wrap items-center gap-3 mb-6">
+          <span className={`px-3 py-1 rounded-full text-xs font-bold ${
+            currentRound === 2
+              ? "bg-amber-500/20 text-amber-400 border border-amber-500/30"
+              : "bg-dice-cyan/20 text-dice-cyan border border-dice-cyan/30"
+          }`}>
+            {currentRound === 2 ? "ФИНАЛ (Раунд 2)" : "Раунд 1"}
+          </span>
+
+          <div className="flex rounded-lg overflow-hidden border border-white/10 text-xs">
+            {[
+              { label: "Все", value: undefined },
+              { label: "R1", value: 1 },
+              { label: "R2", value: 2 },
+            ].map((opt) => (
+              <button
+                key={opt.label}
+                onClick={() => {
+                  setRoundFilter(opt.value);
+                  setLoading(true);
+                  fetchStats(opt.value);
+                }}
+                className={`px-3 py-1.5 transition-colors ${
+                  roundFilter === opt.value
+                    ? "bg-white/10 text-white"
+                    : "text-slate-500 hover:text-slate-300"
+                }`}
+              >
+                {opt.label}
+              </button>
+            ))}
+          </div>
+
+          {currentRound === 1 && stats && stats.totalVoters >= 1 && (
+            <>
+              {confirmAction === "start_round_2" ? (
+                <div className="flex items-center gap-2">
+                  <span className="text-xs text-amber-400">Запустить финал?</span>
+                  <button
+                    onClick={() => handleAction("start_round_2")}
+                    disabled={actionLoading}
+                    className="px-3 py-1 rounded-lg text-xs bg-amber-500 text-black font-bold hover:bg-amber-400 transition-colors disabled:opacity-50"
+                  >
+                    {actionLoading ? "..." : "Да"}
+                  </button>
+                  <button
+                    onClick={() => setConfirmAction(null)}
+                    className="px-3 py-1 rounded-lg text-xs glass text-slate-400 hover:text-white transition-colors"
+                  >
+                    Отмена
+                  </button>
+                </div>
+              ) : (
+                <button
+                  onClick={() => setConfirmAction("start_round_2")}
+                  className="px-4 py-1.5 rounded-lg text-xs bg-amber-500/20 text-amber-400 border border-amber-500/30 hover:bg-amber-500/30 transition-colors"
+                >
+                  Запустить Раунд 2
+                </button>
+              )}
+            </>
+          )}
+
+          {currentRound === 2 && (
+            <>
+              {confirmAction === "reset_to_round_1" ? (
+                <div className="flex items-center gap-2">
+                  <span className="text-xs text-red-400">Вернуть Раунд 1?</span>
+                  <button
+                    onClick={() => handleAction("reset_to_round_1")}
+                    disabled={actionLoading}
+                    className="px-3 py-1 rounded-lg text-xs bg-red-500 text-white font-bold hover:bg-red-400 transition-colors disabled:opacity-50"
+                  >
+                    {actionLoading ? "..." : "Да"}
+                  </button>
+                  <button
+                    onClick={() => setConfirmAction(null)}
+                    className="px-3 py-1 rounded-lg text-xs glass text-slate-400 hover:text-white transition-colors"
+                  >
+                    Отмена
+                  </button>
+                </div>
+              ) : (
+                <button
+                  onClick={() => setConfirmAction("reset_to_round_1")}
+                  className="px-4 py-1.5 rounded-lg text-xs bg-red-500/10 text-red-400 border border-red-500/20 hover:bg-red-500/20 transition-colors"
+                >
+                  Откатить на R1
+                </button>
+              )}
+            </>
+          )}
         </div>
 
         {loading && (
@@ -118,7 +245,9 @@ export default function AdminPage() {
                 {stats.projects.map((p, i) => (
                   <motion.div
                     key={p.projectId}
-                    className="flex items-center gap-4 px-4 py-3 hover:bg-white/[0.03] transition-colors"
+                    className={`flex items-center gap-4 px-4 py-3 hover:bg-white/[0.03] transition-colors ${
+                      finalistSet.has(p.projectId) ? "border-l-2 border-l-amber-500" : ""
+                    }`}
                     initial={{ opacity: 0, x: -10 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: i * 0.03 }}
@@ -134,7 +263,14 @@ export default function AdminPage() {
                       #{i + 1}
                     </span>
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-sm font-medium text-white truncate">{p.title}</h3>
+                      <div className="flex items-center gap-2">
+                        <h3 className="text-sm font-medium text-white truncate">{p.title}</h3>
+                        {finalistSet.has(p.projectId) && (
+                          <span className="shrink-0 px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-400">
+                            ФИНАЛ
+                          </span>
+                        )}
+                      </div>
                       <span className="text-xs text-slate-600 font-mono">{p.projectId}</span>
                     </div>
                     <div className="flex items-center gap-4 text-xs shrink-0">

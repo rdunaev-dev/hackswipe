@@ -6,6 +6,7 @@ import {
   castVote,
   getProjectById,
   getAllProjects,
+  getCurrentRound,
 } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
@@ -16,7 +17,8 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const dbSession = await findSessionByEmail(email);
+  const currentRound = await getCurrentRound();
+  const dbSession = await findSessionByEmail(email, currentRound);
   if (!dbSession) {
     return NextResponse.json({ error: "No session found" }, { status: 400 });
   }
@@ -67,8 +69,10 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const dbSession = await findSessionByEmail(email);
+  const currentRound = await getCurrentRound();
+  const dbSession = await findSessionByEmail(email, currentRound);
   return NextResponse.json({
     voted: dbSession ? await hasVoted(dbSession.id) : false,
+    round: currentRound,
   });
 }

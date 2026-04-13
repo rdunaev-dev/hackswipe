@@ -9,6 +9,8 @@ import {
   getProjectTimesShown,
   hasVoted,
   seedFromJson,
+  getCurrentRound,
+  getFinalists,
 } from "@/lib/db";
 import { rollD100, getRarity, getSessionSize } from "@/lib/balancer";
 import { v4 as uuid } from "uuid";
@@ -29,22 +31,45 @@ export async function GET(req: NextRequest) {
     allProjects = await getAllProjects();
   }
 
+  const currentRound = await getCurrentRound();
+
+  let pool: Project[];
+  if (currentRound === 2) {
+    const finalistIds = await getFinalists();
+    const finalistSet = new Set(finalistIds);
+    pool = allProjects.filter((p) => finalistSet.has(p.id));
+  } else {
+    pool = allProjects;
+  }
+
   const ownProjectIds = new Set(
-    allProjects
+    pool
       .filter((p) => p.authorEmails.some((e) => e.toLowerCase() === email))
       .map((p) => p.id),
   );
 
-  const eligibleCount = allProjects.length - ownProjectIds.size;
-  const sessionSize = getSessionSize(eligibleCount);
+  const eligibleCount = pool.length - ownProjectIds.size;
+  const sessionSize =
+    currentRound === 2 ? eligibleCount : getSessionSize(eligibleCount);
 
-  let dbSession = await findSessionByEmail(email);
+  let dbSession = await findSessionByEmail(email, currentRound);
   if (!dbSession) {
-    dbSession = await createDbSession(uuid(), email, null, null, null, sessionSize);
+    dbSession = await createDbSession(
+      uuid(),
+      email,
+      null,
+      null,
+      null,
+      sessionSize,
+      currentRound,
+    );
   }
 
   if (await hasVoted(dbSession.id)) {
-    return NextResponse.json({ status: "completed" });
+    const r1Completed = currentRound === 2
+      ? true
+      : await hasVotedR1(email);
+    return NextResponse.json({ status: "completed", round: currentRound, r1Completed });
   }
 
   const seenIds = await getSeenProjectIds(dbSession.id);
@@ -54,34 +79,41 @@ export async function GET(req: NextRequest) {
   if (swipeCount >= sessionSize) {
     return NextResponse.json({
       status: "feed_done",
+      round: currentRound,
       bankIds,
-      bankProjects: bankIds.map((id) => allProjects.find((p) => p.id === id)).filter(Boolean),
+      bankProjects: bankIds
+        .map((id) => pool.find((p) => p.id === id))
+        .filter(Boolean),
       swipeCount,
       sessionSize,
     });
   }
 
-  const remaining = allProjects.filter(
+  const remaining = pool.filter(
     (p) => !seenIds.has(p.id) && !ownProjectIds.has(p.id),
   );
 
   if (remaining.length === 0) {
     return NextResponse.json({
       status: "feed_done",
+      round: currentRound,
       bankIds,
-      bankProjects: bankIds.map((id) => allProjects.find((p) => p.id === id)).filter(Boolean),
+      bankProjects: bankIds
+        .map((id) => pool.find((p) => p.id === id))
+        .filter(Boolean),
       swipeCount,
       sessionSize,
     });
   }
 
-  const globalShown = await getProjectTimesShown();
+  const globalShown = await getProjectTimesShown(currentRound);
   const roll = rollD100();
   const nextProject = selectWeighted(remaining, globalShown, roll);
   const rarity = getRarity(roll);
 
   return NextResponse.json({
     status: "active",
+    round: currentRound,
     project: nextProject,
     diceRoll: roll,
     rarity,
@@ -90,6 +122,12 @@ export async function GET(req: NextRequest) {
     bankCount: bankIds.length,
     bankIds,
   });
+}
+
+async function hasVotedR1(email: string): Promise<boolean> {
+  const s = await findSessionByEmail(email, 1);
+  if (!s) return false;
+  return await hasVoted(s.id);
 }
 
 function selectWeighted(

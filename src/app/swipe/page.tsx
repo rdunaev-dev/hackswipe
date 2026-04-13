@@ -13,6 +13,7 @@ import { Project, DiceResult, SwipeDirection, DiceRarity } from "@/lib/types";
 
 interface FeedResponse {
   status: "active" | "feed_done" | "completed";
+  round?: number;
   project?: Project;
   diceRoll?: number;
   rarity?: DiceRarity;
@@ -36,6 +37,7 @@ export default function SwipePage() {
   const [bankCount, setBankCount] = useState(0);
   const [feedDone, setFeedDone] = useState(false);
   const [isReady, setIsReady] = useState(false);
+  const [currentRound, setCurrentRound] = useState(1);
   const [, setPendingDice] = useState<{ roll: number; rarity: DiceRarity } | null>(null);
 
   const fetchNext = useCallback(async (): Promise<FeedResponse | null> => {
@@ -63,6 +65,7 @@ export default function SwipePage() {
 
     fetchNext().then((data) => {
       if (!data) return;
+      if (data.round) setCurrentRound(data.round);
       if (data.status === "completed") {
         router.replace("/done");
         return;
@@ -154,6 +157,11 @@ export default function SwipePage() {
         <div className="flex-1 mx-3">
           <ProgressBar current={swipeCount} total={sessionSize} />
         </div>
+        {currentRound === 2 && (
+          <span className="ml-2 px-2.5 py-1 rounded-full text-[10px] font-black tracking-wider bg-amber-500/20 text-amber-400 border border-amber-500/30 uppercase">
+            Финал
+          </span>
+        )}
       </div>
 
       <div className="flex-1 relative">

@@ -49,7 +49,6 @@ async function ensureSchema() {
       completed_at INTEGER
     )
   `;
-  await sql`CREATE UNIQUE INDEX IF NOT EXISTS idx_sessions_email ON sessions(email)`;
 
   await sql`
     CREATE TABLE IF NOT EXISTS swipes (
@@ -75,6 +74,22 @@ async function ensureSchema() {
   `;
   await sql`CREATE UNIQUE INDEX IF NOT EXISTS idx_votes_winner ON votes(session_id) WHERE vote_type = 'winner'`;
   await sql`CREATE INDEX IF NOT EXISTS idx_votes_project ON votes(project_id)`;
+
+  await sql`
+    CREATE TABLE IF NOT EXISTS settings (
+      key   TEXT PRIMARY KEY,
+      value TEXT NOT NULL
+    )
+  `;
+
+  // Migration: add round column to existing tables
+  await sql`ALTER TABLE sessions ADD COLUMN IF NOT EXISTS round INTEGER NOT NULL DEFAULT 1`;
+  await sql`ALTER TABLE swipes ADD COLUMN IF NOT EXISTS round INTEGER NOT NULL DEFAULT 1`;
+  await sql`ALTER TABLE votes ADD COLUMN IF NOT EXISTS round INTEGER NOT NULL DEFAULT 1`;
+
+  // Replace old unique index on sessions(email) with (email, round)
+  await sql`DROP INDEX IF EXISTS idx_sessions_email`;
+  await sql`CREATE UNIQUE INDEX IF NOT EXISTS idx_sessions_email_round ON sessions(email, round)`;
 
   _schemaReady = true;
 }
@@ -107,6 +122,7 @@ export interface DbSession {
   displayName: string | null;
   avatarUrl: string | null;
   sessionSize: number;
+  round: number;
   createdAt: number;
   completedAt: number | null;
 }
@@ -119,9 +135,46 @@ function rowToSession(r: Record<string, unknown>): DbSession {
     displayName: r.display_name as string | null,
     avatarUrl: r.avatar_url as string | null,
     sessionSize: Number(r.session_size),
+    round: Number(r.round ?? 1),
     createdAt: Number(r.created_at),
     completedAt: r.completed_at ? Number(r.completed_at) : null,
   };
+}
+
+// ─── Settings ───
+
+export async function getSetting(key: string): Promise<string | null> {
+  await ensureSchema();
+  const sql = getSql();
+  const rows = await sql`SELECT value FROM settings WHERE key = ${key}`;
+  return rows.length > 0 ? (rows[0].value as string) : null;
+}
+
+export async function setSetting(key: string, value: string) {
+  await ensureSchema();
+  const sql = getSql();
+  await sql`
+    INSERT INTO settings (key, value) VALUES (${key}, ${value})
+    ON CONFLICT(key) DO UPDATE SET value = EXCLUDED.value
+  `;
+}
+
+export async function getCurrentRound(): Promise<number> {
+  const val = await getSetting("current_round");
+  return val ? Number(val) : 1;
+}
+
+export async function setCurrentRound(round: number) {
+  await setSetting("current_round", String(round));
+}
+
+export async function getFinalists(): Promise<string[]> {
+  const val = await getSetting("finalists");
+  return val ? val.split(",").filter(Boolean) : [];
+}
+
+export async function setFinalists(ids: string[]) {
+  await setSetting("finalists", ids.join(","));
 }
 
 // ─── Project CRUD ───
@@ -158,12 +211,13 @@ export async function getProjectById(id: string): Promise<Project | null> {
   return rows.length > 0 ? rowToProject(rows[0]) : null;
 }
 
-// ─── Session CRUD ───
+// ─── Session CRUD (round-aware) ───
 
-export async function findSessionByEmail(email: string): Promise<DbSession | null> {
+export async function findSessionByEmail(email: string, round?: number): Promise<DbSession | null> {
   await ensureSchema();
   const sql = getSql();
-  const rows = await sql`SELECT * FROM sessions WHERE email = ${email.toLowerCase()}`;
+  const r = round ?? await getCurrentRound();
+  const rows = await sql`SELECT * FROM sessions WHERE email = ${email.toLowerCase()} AND round = ${r}`;
   return rows.length > 0 ? rowToSession(rows[0]) : null;
 }
 
@@ -174,14 +228,16 @@ export async function createDbSession(
   displayName: string | null,
   avatarUrl: string | null,
   sessionSize: number,
+  round?: number,
 ): Promise<DbSession> {
   await ensureSchema();
   const sql = getSql();
+  const r = round ?? await getCurrentRound();
   await sql`
-    INSERT INTO sessions (id, email, google_id, display_name, avatar_url, session_size)
-    VALUES (${id}, ${email.toLowerCase()}, ${googleId}, ${displayName}, ${avatarUrl}, ${sessionSize})
+    INSERT INTO sessions (id, email, google_id, display_name, avatar_url, session_size, round)
+    VALUES (${id}, ${email.toLowerCase()}, ${googleId}, ${displayName}, ${avatarUrl}, ${sessionSize}, ${r})
   `;
-  return (await findSessionByEmail(email))!;
+  return (await findSessionByEmail(email, r))!;
 }
 
 export async function completeSession(sessionId: string) {
@@ -200,9 +256,11 @@ export async function recordSwipe(
 ) {
   await ensureSchema();
   const sql = getSql();
+  const sessRows = await sql`SELECT round FROM sessions WHERE id = ${sessionId}`;
+  const round = sessRows.length > 0 ? Number(sessRows[0].round) : 1;
   await sql`
-    INSERT INTO swipes (session_id, project_id, direction, dice_roll)
-    VALUES (${sessionId}, ${projectId}, ${direction}, ${diceRoll})
+    INSERT INTO swipes (session_id, project_id, direction, dice_roll, round)
+    VALUES (${sessionId}, ${projectId}, ${direction}, ${diceRoll}, ${round})
   `;
 }
 
@@ -237,10 +295,12 @@ export async function getBankProjectIds(sessionId: string): Promise<string[]> {
 export async function castVote(sessionId: string, winnerId: string, honorableIds: string[]) {
   await ensureSchema();
   const sql = getSql();
+  const sessRows = await sql`SELECT round FROM sessions WHERE id = ${sessionId}`;
+  const round = sessRows.length > 0 ? Number(sessRows[0].round) : 1;
   await sql.begin(async (tx) => {
-    await tx`INSERT INTO votes (session_id, project_id, vote_type) VALUES (${sessionId}, ${winnerId}, 'winner')`;
+    await tx`INSERT INTO votes (session_id, project_id, vote_type, round) VALUES (${sessionId}, ${winnerId}, 'winner', ${round})`;
     for (const hId of honorableIds) {
-      await tx`INSERT INTO votes (session_id, project_id, vote_type) VALUES (${sessionId}, ${hId}, 'honorable')`;
+      await tx`INSERT INTO votes (session_id, project_id, vote_type, round) VALUES (${sessionId}, ${hId}, 'honorable', ${round})`;
     }
     await tx`UPDATE sessions SET completed_at = EXTRACT(EPOCH FROM NOW())::INTEGER WHERE id = ${sessionId}`;
   });
@@ -253,44 +313,59 @@ export async function hasVoted(sessionId: string): Promise<boolean> {
   return rows.length > 0;
 }
 
-export async function hasVotedByEmail(email: string): Promise<boolean> {
+export async function hasVotedByEmail(email: string, round?: number): Promise<boolean> {
   await ensureSchema();
   const sql = getSql();
+  const r = round ?? await getCurrentRound();
   const rows = await sql`
     SELECT 1 FROM votes v JOIN sessions s ON v.session_id = s.id
-    WHERE s.email = ${email.toLowerCase()} AND v.vote_type = 'winner' LIMIT 1
+    WHERE s.email = ${email.toLowerCase()} AND s.round = ${r} AND v.vote_type = 'winner' LIMIT 1
   `;
   return rows.length > 0;
 }
 
-// ─── Stats ───
+// ─── Stats (round-aware) ───
 
-export async function getProjectTimesShown(): Promise<Map<string, number>> {
+export async function getProjectTimesShown(round?: number): Promise<Map<string, number>> {
   await ensureSchema();
   const sql = getSql();
-  const rows = await sql`SELECT project_id, COUNT(*) as cnt FROM swipes GROUP BY project_id`;
+  const r = round ?? await getCurrentRound();
+  const rows = await sql`SELECT project_id, COUNT(*) as cnt FROM swipes WHERE round = ${r} GROUP BY project_id`;
   return new Map(rows.map((r) => [r.project_id as string, Number(r.cnt)]));
 }
 
-export async function getFullStats() {
+export async function getFullStats(round?: number) {
   await ensureSchema();
   const sql = getSql();
 
-  const totalRes = await sql`SELECT COUNT(*) as cnt FROM votes WHERE vote_type = 'winner'`;
+  const currentRound = round ?? await getCurrentRound();
+  const roundFilter = round !== undefined;
+
+  const totalRes = roundFilter
+    ? await sql`SELECT COUNT(*) as cnt FROM votes v JOIN sessions s ON v.session_id = s.id WHERE v.vote_type = 'winner' AND s.round = ${currentRound}`
+    : await sql`SELECT COUNT(*) as cnt FROM votes WHERE vote_type = 'winner'`;
   const totalVoters = Number(totalRes[0].cnt);
 
   const projects = await getAllProjects();
 
-  const fvRows = await sql`SELECT project_id, COUNT(*) as cnt FROM votes WHERE vote_type = 'winner' GROUP BY project_id`;
+  const fvRows = roundFilter
+    ? await sql`SELECT v.project_id, COUNT(*) as cnt FROM votes v JOIN sessions s ON v.session_id = s.id WHERE v.vote_type = 'winner' AND s.round = ${currentRound} GROUP BY v.project_id`
+    : await sql`SELECT project_id, COUNT(*) as cnt FROM votes WHERE vote_type = 'winner' GROUP BY project_id`;
   const fvMap = new Map(fvRows.map((r) => [r.project_id as string, Number(r.cnt)]));
 
-  const hmRows = await sql`SELECT project_id, COUNT(*) as cnt FROM votes WHERE vote_type = 'honorable' GROUP BY project_id`;
+  const hmRows = roundFilter
+    ? await sql`SELECT v.project_id, COUNT(*) as cnt FROM votes v JOIN sessions s ON v.session_id = s.id WHERE v.vote_type = 'honorable' AND s.round = ${currentRound} GROUP BY v.project_id`
+    : await sql`SELECT project_id, COUNT(*) as cnt FROM votes WHERE vote_type = 'honorable' GROUP BY project_id`;
   const hmMap = new Map(hmRows.map((r) => [r.project_id as string, Number(r.cnt)]));
 
-  const shownRows = await sql`SELECT project_id, COUNT(*) as cnt FROM swipes GROUP BY project_id`;
+  const shownRows = roundFilter
+    ? await sql`SELECT project_id, COUNT(*) as cnt FROM swipes WHERE round = ${currentRound} GROUP BY project_id`
+    : await sql`SELECT project_id, COUNT(*) as cnt FROM swipes GROUP BY project_id`;
   const shownMap = new Map(shownRows.map((r) => [r.project_id as string, Number(r.cnt)]));
 
-  const bankRows = await sql`SELECT project_id, COUNT(*) as cnt FROM swipes WHERE direction = 'right' GROUP BY project_id`;
+  const bankRows = roundFilter
+    ? await sql`SELECT project_id, COUNT(*) as cnt FROM swipes WHERE direction = 'right' AND round = ${currentRound} GROUP BY project_id`
+    : await sql`SELECT project_id, COUNT(*) as cnt FROM swipes WHERE direction = 'right' GROUP BY project_id`;
   const bankMap = new Map(bankRows.map((r) => [r.project_id as string, Number(r.cnt)]));
 
   const result = projects.map((p) => {
@@ -309,7 +384,7 @@ export async function getFullStats() {
   });
 
   result.sort((a, b) => b.finalVotes - a.finalVotes);
-  return { totalVoters, projects: result };
+  return { totalVoters, round: currentRound, projects: result };
 }
 
 // ─── Seed from JSON ───
