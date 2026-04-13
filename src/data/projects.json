@@ -2,16 +2,17 @@
   {
     "id": "hack-81",
     "title": "RAG-based Task Estimation",
-    "oneLiner": "RAG-based Task Estimation",
+    "oneLiner": "ИИ оценивает трудозатраты задач на основе истории похожих тикетов и кодовой базы.",
     "coverUrl": "",
     "forWhom": [
-      "Продакт-менеджеры"
+      "Продакт-менеджеры",
+      "Тимлиды"
     ],
     "whoAffected": [
       "Продуктовые команды"
     ],
     "whatImproves": [
-      "Точность оценок"
+      "Точность оценки сроков задач"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-81",
@@ -26,16 +27,18 @@
   {
     "id": "hack-521",
     "title": "HRMS на базе Frappe HR: полноценная HR-система для компании",
-    "oneLiner": "HRMS на базе Frappe HR: полноценная HR-система для компании",
+    "oneLiner": "Единая HR-платформа на Frappe: от найма до отпусков и кадрового учёта в одном окне.",
     "coverUrl": "",
     "forWhom": [
-      "HR"
+      "HR-менеджеры",
+      "Кадровые специалисты"
     ],
     "whoAffected": [
-      "Вся компания"
+      "HR-отдел",
+      "Все сотрудники"
     ],
     "whatImproves": [
-      "HR-процессы"
+      "Централизация кадрового учёта"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-521",
@@ -50,16 +53,17 @@
   {
     "id": "hack-123",
     "title": "Автоматизация создания новостей из Telegram-каналов",
-    "oneLiner": "Автоматизация создания новостей из Telegram-каналов",
+    "oneLiner": "Бот парсит Telegram-каналы и превращает посты в готовые черновики новостей для редакции.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Редакторы новостей",
+      "Контент-менеджеры"
     ],
     "whoAffected": [
-      "Пользователи сервиса"
+      "Редакция"
     ],
     "whatImproves": [
-      "Автоматизация уведомлений"
+      "Скорость выпуска горячих новостей"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-123",
@@ -74,17 +78,17 @@
   {
     "id": "hack-278",
     "title": "Проверка опубликованного контента — отчёт бота по URL и качеству",
-    "oneLiner": "Проверка опубликованного контента — отчёт бота по URL и качеству",
+    "oneLiner": "Бот получает URL, проверяет качество опубликованного материала и выдаёт детальный отчёт.",
     "coverUrl": "",
     "forWhom": [
-      "Аналитики",
-      "Менеджеры"
+      "Контент-редакторы",
+      "QA-контента"
     ],
     "whoAffected": [
-      "Бизнес"
+      "Редакция"
     ],
     "whatImproves": [
-      "Аналитика и отчётность"
+      "Контроль качества публикаций"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-278",
@@ -99,16 +103,17 @@
   {
     "id": "hack-196",
     "title": "SEO Site Classifier — классификация сайтов (продукт/инфо) по мета-тегам",
-    "oneLiner": "SEO Site Classifier — классификация сайтов (продукт/инфо) по мета-тегам",
+    "oneLiner": "Автоматически отличает продуктовые сайты от информационных по мета-тегам для SEO-анализа.",
     "coverUrl": "",
     "forWhom": [
-      "SEO-специалисты"
+      "SEO-аналитики",
+      "Линкбилдеры"
     ],
     "whoAffected": [
       "SEO-отдел"
     ],
     "whatImproves": [
-      "SEO-эффективность"
+      "Скорость классификации доноров для ссылок"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-196",
@@ -123,16 +128,17 @@
   {
     "id": "hack-502",
     "title": "Автоматизация конкурентного мониторинга SEO (daily snapshots + one-shot report)",
-    "oneLiner": "Автоматизация конкурентного мониторинга SEO (daily snapshots + one-shot report)",
+    "oneLiner": "Ежедневные снапшоты позиций конкурентов и сводный отчёт для быстрого реагирования SEO-команды.",
     "coverUrl": "",
     "forWhom": [
-      "SEO-специалисты"
+      "SEO-стратеги",
+      "SEO-аналитики"
     ],
     "whoAffected": [
       "SEO-отдел"
     ],
     "whatImproves": [
-      "SEO-эффективность"
+      "Оперативность реакции на действия конкурентов"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-502",
@@ -147,17 +153,16 @@
   {
     "id": "hack-78",
     "title": "MetaRatings.by: алерты публикаций, RSS BY-спортмедиа, генератор подписей + QC эксклюзивов",
-    "oneLiner": "MetaRatings.by: алерты публикаций, RSS BY-спортмедиа, генератор подписей + QC эксклюзивов",
+    "oneLiner": "Алерты публикаций BY-медиа, генератор подписей и проверка эксклюзивности для белорусской редакции.",
     "coverUrl": "",
     "forWhom": [
-      "Редакция",
-      "Контент-менеджеры"
+      "Редакторы MetaRatings.by"
     ],
     "whoAffected": [
-      "Контент-команда"
+      "Белорусская редакция"
     ],
     "whatImproves": [
-      "Скорость создания контента"
+      "Мониторинг конкурентов в BY-сегменте"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-78",
@@ -172,16 +177,16 @@
   {
     "id": "hack-982",
     "title": "Telegram-бот: бомбардиры и ассисты после матча",
-    "oneLiner": "Telegram-бот: бомбардиры и ассисты после матча",
+    "oneLiner": "После финального свистка бот мгновенно выдаёт статистику бомбардиров и ассистентов матча.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Спортивные редакторы"
     ],
     "whoAffected": [
-      "Пользователи сервиса"
+      "Читатели Metaratings"
     ],
     "whatImproves": [
-      "Автоматизация уведомлений"
+      "Скорость публикации послематчевой статистики"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-982",
@@ -196,16 +201,17 @@
   {
     "id": "hack-452",
     "title": "IdeaHub — захват идей из Slack/Cursor, дедуп и витрина (SFE MVP)",
-    "oneLiner": "IdeaHub — захват идей из Slack/Cursor, дедуп и витрина (SFE MVP)",
+    "oneLiner": "Единая витрина идей: агент собирает предложения из Slack и Cursor, убирает дубли, показывает лучшее.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Продакт-менеджеры",
+      "Разработчики SFE"
     ],
     "whoAffected": [
-      "Компания"
+      "Продуктовые команды"
     ],
     "whatImproves": [
-      "Автоматизация процессов"
+      "Сохранность и видимость продуктовых идей"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-452",
@@ -220,16 +226,17 @@
   {
     "id": "hack-592",
     "title": "Музей памяти Metaratings — корпоративный медиа-архив",
-    "oneLiner": "Музей памяти Metaratings — корпоративный медиа-архив",
+    "oneLiner": "Корпоративный медиа-архив с ключевыми событиями, мемами и историей компании для всех сотрудников.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "HR-менеджеры",
+      "Маркетологи"
     ],
     "whoAffected": [
-      "Компания"
+      "Все сотрудники"
     ],
     "whatImproves": [
-      "Автоматизация процессов"
+      "Корпоративная культура и сохранение истории"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-592",
@@ -244,17 +251,16 @@
   {
     "id": "hack-249",
     "title": "AI Toolbox — собранный контекст и toolset для Laravel/GraphQL в SFE",
-    "oneLiner": "AI Toolbox — собранный контекст и toolset для Laravel/GraphQL в SFE",
+    "oneLiner": "Готовый набор контекста и инструментов для разработки на Laravel/GraphQL прямо в Cursor.",
     "coverUrl": "",
     "forWhom": [
-      "Редакция",
-      "Контент-менеджеры"
+      "Backend-разработчики SFE"
     ],
     "whoAffected": [
-      "Контент-команда"
+      "Команда разработки SFE"
     ],
     "whatImproves": [
-      "Скорость создания контента"
+      "Продуктивность разработки на Laravel"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-249",
@@ -269,17 +275,17 @@
   {
     "id": "hack-438",
     "title": "Система рейтингов БК: методология, мини-сервис, симуляция, скиллы Cursor",
-    "oneLiner": "Система рейтингов БК: методология, мини-сервис, симуляция, скиллы Cursor",
+    "oneLiner": "Методология и мини-сервис для расчёта рейтингов букмекерских контор с симуляцией и скиллами Cursor.",
     "coverUrl": "",
     "forWhom": [
-      "Монетизация"
+      "Аналитики монетизации",
+      "Контент-менеджеры БК"
     ],
     "whoAffected": [
-      "Бизнес",
-      "Пользователи"
+      "Отдел монетизации"
     ],
     "whatImproves": [
-      "Монетизация и конверсия"
+      "Объективность и прозрачность рейтингов БК"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-438",
@@ -294,16 +300,17 @@
   {
     "id": "hack-57",
     "title": "Среда создания ИИ-сотрудников + AI Project Manager",
-    "oneLiner": "Среда создания ИИ-сотрудников + AI Project Manager",
+    "oneLiner": "Платформа для создания ИИ-ассистентов и виртуальный PM, который ведёт проекты автономно.",
     "coverUrl": "",
     "forWhom": [
-      "HR"
+      "Тимлиды",
+      "AI-инженеры"
     ],
     "whoAffected": [
-      "Вся компания"
+      "Все отделы"
     ],
     "whatImproves": [
-      "HR-процессы"
+      "Скорость запуска новых AI-агентов"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-57",
@@ -318,17 +325,17 @@
   {
     "id": "hack-857",
     "title": "TWLF.ai — 12-й Игрок: AI-компаньон для футбольных болельщиков",
-    "oneLiner": "TWLF.ai — 12-й Игрок: AI-компаньон для футбольных болельщиков",
+    "oneLiner": "AI-компаньон болельщика: персональная статистика, предматчевые брифинги и советы по ставкам.",
     "coverUrl": "",
     "forWhom": [
-      "Пользователи",
-      "Фанаты"
+      "Продакт-менеджеры",
+      "Разработчики"
     ],
     "whoAffected": [
-      "Аудитория сайта"
+      "Футбольные болельщики"
     ],
     "whatImproves": [
-      "Вовлечённость аудитории"
+      "Вовлечённость и удержание аудитории"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-857",
@@ -343,17 +350,17 @@
   {
     "id": "hack-152",
     "title": "Pipeline Failure Collector",
-    "oneLiner": "Pipeline Failure Collector",
+    "oneLiner": "Автоматически собирает и группирует падения CI/CD-пайплайнов для быстрого анализа причин.",
     "coverUrl": "",
     "forWhom": [
-      "DevOps",
-      "Разработчики"
+      "DevOps-инженеры",
+      "Backend-разработчики"
     ],
     "whoAffected": [
       "Техническая команда"
     ],
     "whatImproves": [
-      "Инфраструктура"
+      "Время диагностики сломанных пайплайнов"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-152",
@@ -368,16 +375,17 @@
   {
     "id": "hack-382",
     "title": "Агент автоматических ответов вебмастерам (линкбилдинг)",
-    "oneLiner": "Агент автоматических ответов вебмастерам (линкбилдинг)",
+    "oneLiner": "ИИ-агент отвечает вебмастерам по шаблону, экономя часы рутинной переписки по линкбилдингу.",
     "coverUrl": "",
     "forWhom": [
-      "SEO-специалисты"
+      "Линкбилдеры",
+      "SEO-аутрич-менеджеры"
     ],
     "whoAffected": [
       "SEO-отдел"
     ],
     "whatImproves": [
-      "SEO-эффективность"
+      "Скорость обработки заявок вебмастеров"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-382",
@@ -392,16 +400,17 @@
   {
     "id": "hack-975",
     "title": "Metaratings Sponsor Project Builder — конструктор бриф → draft КП",
-    "oneLiner": "Metaratings Sponsor Project Builder — конструктор бриф → draft КП",
+    "oneLiner": "Конструктор коммерческих предложений: из брифа спонсора — в готовый драфт КП за минуты.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Менеджеры по продажам",
+      "Маркетологи"
     ],
     "whoAffected": [
-      "Компания"
+      "Отдел монетизации"
     ],
     "whatImproves": [
-      "Автоматизация процессов"
+      "Скорость подготовки коммерческих предложений"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-975",
@@ -416,16 +425,18 @@
   {
     "id": "hack-130",
     "title": "Domain Agent — автоматизация управления доменами Metaratings",
-    "oneLiner": "Domain Agent — автоматизация управления доменами Metaratings",
+    "oneLiner": "Агент управляет сотнями доменов Metaratings: продление, DNS, мониторинг — без ручной рутины.",
     "coverUrl": "",
     "forWhom": [
+      "DevOps-инженеры",
       "SEO-специалисты"
     ],
     "whoAffected": [
+      "Техническая команда",
       "SEO-отдел"
     ],
     "whatImproves": [
-      "Управление доменами"
+      "Контроль над доменным портфелем"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-130",
@@ -440,17 +451,17 @@
   {
     "id": "hack-167",
     "title": "Backlog Groomer — помощник PM/PDM по актуализации бэклога",
-    "oneLiner": "Backlog Groomer — помощник PM/PDM по актуализации бэклога",
+    "oneLiner": "ИИ-помощник чистит бэклог: находит устаревшие задачи, дублирует и предлагает приоритеты.",
     "coverUrl": "",
     "forWhom": [
       "Продакт-менеджеры",
-      "Тимлиды"
+      "Владельцы бэклогов"
     ],
     "whoAffected": [
       "Продуктовые команды"
     ],
     "whatImproves": [
-      "Управление задачами"
+      "Актуальность и чистота бэклога"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-167",
@@ -465,16 +476,16 @@
   {
     "id": "hack-206",
     "title": "FS Monitor: Seometrics vs браузер, сводный отчёт и YT handoff",
-    "oneLiner": "FS Monitor: Seometrics vs браузер, сводный отчёт и YT handoff",
+    "oneLiner": "Сравнивает данные Seometrics с реальными позициями в браузере и передаёт расхождения в YouTrack.",
     "coverUrl": "",
     "forWhom": [
-      "SEO-специалисты"
+      "SEO-аналитики"
     ],
     "whoAffected": [
       "SEO-отдел"
     ],
     "whatImproves": [
-      "SEO-эффективность"
+      "Достоверность данных о позициях сайта"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-206",
@@ -489,16 +500,17 @@
   {
     "id": "hack-606",
     "title": "Сервис расчёта отыгрыша бонуса: демо UI, GitLab Pages, сдача (ступени 3–4)",
-    "oneLiner": "Сервис расчёта отыгрыша бонуса: демо UI, GitLab Pages, сдача (ступени 3–4)",
+    "oneLiner": "Калькулятор отыгрыша бонуса БК с наглядным UI — пользователь видит свой прогресс по вейджеру.",
     "coverUrl": "",
     "forWhom": [
-      "Разработчики"
+      "Frontend-разработчики",
+      "Контент-менеджеры БК"
     ],
     "whoAffected": [
-      "Техническая команда"
+      "Читатели обзоров бонусов"
     ],
     "whatImproves": [
-      "Процессы разработки"
+      "Прозрачность условий бонусов для пользователей"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-606",
@@ -513,17 +525,17 @@
   {
     "id": "hack-690",
     "title": "Интерактивный дашборд «Дерево метрик»",
-    "oneLiner": "Интерактивный дашборд «Дерево метрик»",
+    "oneLiner": "Визуальное дерево метрик: от верхнеуровневых KPI до атомарных показателей с drill-down.",
     "coverUrl": "",
     "forWhom": [
       "Аналитики",
-      "Менеджеры"
+      "Руководители отделов"
     ],
     "whoAffected": [
-      "Бизнес"
+      "Менеджмент"
     ],
     "whatImproves": [
-      "Аналитика и отчётность"
+      "Понимание взаимосвязей между метриками"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-690",
@@ -538,16 +550,17 @@
   {
     "id": "hack-406",
     "title": "Еженедельный HR-отчёт: Huntflow, Calendar, YouTrack → Markdown",
-    "oneLiner": "Еженедельный HR-отчёт: Huntflow, Calendar, YouTrack → Markdown",
+    "oneLiner": "Автосборка еженедельного HR-отчёта из Huntflow, календаря и YouTrack в Markdown.",
     "coverUrl": "",
     "forWhom": [
-      "HR"
+      "HR-менеджеры",
+      "HR-директор"
     ],
     "whoAffected": [
-      "Вся компания"
+      "HR-отдел"
     ],
     "whatImproves": [
-      "HR-процессы"
+      "Время подготовки еженедельной HR-отчётности"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-406",
@@ -562,16 +575,17 @@
   {
     "id": "hack-390",
     "title": "SEO Knowledge Base — синхронизация YouTrack ↔ Git",
-    "oneLiner": "SEO Knowledge Base — синхронизация YouTrack ↔ Git",
+    "oneLiner": "Двусторонняя синхронизация SEO-знаний между YouTrack-статьями и Git-репозиторием.",
     "coverUrl": "",
     "forWhom": [
-      "SEO-специалисты"
+      "SEO-специалисты",
+      "SEO-тимлид"
     ],
     "whoAffected": [
       "SEO-отдел"
     ],
     "whatImproves": [
-      "SEO-эффективность"
+      "Доступность и актуальность SEO-документации"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-390",
@@ -586,17 +600,16 @@
   {
     "id": "hack-740",
     "title": "Автоматизация скриншотов для отчётности букмекерам (RU)",
-    "oneLiner": "Автоматизация скриншотов для отчётности букмекерам (RU)",
+    "oneLiner": "Робот делает скриншоты страниц с бонусами и собирает их в отчёт для партнёров-букмекеров.",
     "coverUrl": "",
     "forWhom": [
-      "Аналитики",
-      "Менеджеры"
+      "Менеджеры по работе с партнёрами"
     ],
     "whoAffected": [
-      "Бизнес"
+      "Отдел монетизации"
     ],
     "whatImproves": [
-      "Аналитика и отчётность"
+      "Скорость подготовки отчётов для БК-партнёров"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-740",
@@ -611,17 +624,16 @@
   {
     "id": "hack-964",
     "title": "Пайплайн ИИ-текстов для Cybersport и публикация в Sports Media Admin API",
-    "oneLiner": "Пайплайн ИИ-текстов для Cybersport и публикация в Sports Media Admin API",
+    "oneLiner": "Полный конвейер: ИИ пишет тексты про киберспорт и публикует через Sports Media Admin API.",
     "coverUrl": "",
     "forWhom": [
-      "Редакция",
-      "Контент-менеджеры"
+      "Киберспортивные редакторы"
     ],
     "whoAffected": [
-      "Контент-команда"
+      "Редакция CyberMeta"
     ],
     "whatImproves": [
-      "Скорость создания контента"
+      "Объём киберспортивного контента"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-964",
@@ -636,17 +648,17 @@
   {
     "id": "hack-481",
     "title": "Витрина персональных офферов БК: виджет, ЛК, моки",
-    "oneLiner": "Витрина персональных офферов БК: виджет, ЛК, моки",
+    "oneLiner": "Персональная витрина офферов БК: каждый пользователь видит бонусы, релевантные именно ему.",
     "coverUrl": "",
     "forWhom": [
-      "Монетизация"
+      "Продакт-менеджеры монетизации",
+      "Frontend-разработчики"
     ],
     "whoAffected": [
-      "Бизнес",
-      "Пользователи"
+      "Пользователи Metaratings"
     ],
     "whatImproves": [
-      "Монетизация и конверсия"
+      "Конверсия в переходы к букмекерам"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-481",
@@ -661,16 +673,17 @@
   {
     "id": "hack-613",
     "title": "Бонус-чат: скилл анализа CSV (ст. 2) + Slack-алерты в облаке (ст. 4)",
-    "oneLiner": "Бонус-чат: скилл анализа CSV (ст. 2) + Slack-алерты в облаке (ст. 4)",
+    "oneLiner": "Чат-бот анализирует загруженный CSV с бонусами и рассылает Slack-алерты при аномалиях.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Аналитики монетизации",
+      "Контент-менеджеры БК"
     ],
     "whoAffected": [
-      "Пользователи сервиса"
+      "Отдел монетизации"
     ],
     "whatImproves": [
-      "Автоматизация уведомлений"
+      "Оперативность контроля бонусных данных"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-613",
@@ -685,17 +698,18 @@
   {
     "id": "hack-792",
     "title": "PR-разбор готовой спортивной новости: тематика, лиды, каналы",
-    "oneLiner": "PR-разбор готовой спортивной новости: тематика, лиды, каналы",
+    "oneLiner": "ИИ разбирает готовую новость на тематику, ключевые лиды и подходящие каналы дистрибуции.",
     "coverUrl": "",
     "forWhom": [
-      "Редакция",
-      "Контент-менеджеры"
+      "PR-менеджеры",
+      "Главные редакторы"
     ],
     "whoAffected": [
-      "Контент-команда"
+      "Отдел маркетинга",
+      "Редакция"
     ],
     "whatImproves": [
-      "Скорость создания контента"
+      "Эффективность дистрибуции спортивных новостей"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-792",
@@ -710,16 +724,17 @@
   {
     "id": "hack-474",
     "title": "SEO-видео: сценарий из статьи для сайтов Меты (MVP)",
-    "oneLiner": "SEO-видео: сценарий из статьи для сайтов Меты (MVP)",
+    "oneLiner": "Из текстовой статьи — в готовый видео-сценарий для YouTube-канала Metaratings.",
     "coverUrl": "",
     "forWhom": [
-      "SEO-специалисты"
+      "Видеопродюсеры",
+      "SEO-контент-менеджеры"
     ],
     "whoAffected": [
-      "SEO-отдел"
+      "Видео-команда"
     ],
     "whatImproves": [
-      "SEO-эффективность"
+      "Скорость производства SEO-видеоконтента"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-474",
@@ -734,17 +749,17 @@
   {
     "id": "hack-934",
     "title": "Шаблон прогнозов MetaRatings: MD по команде, коэффициенты, папка «Шаблоны ИИ»",
-    "oneLiner": "Шаблон прогнозов MetaRatings: MD по команде, коэффициенты, папка «Шаблоны ИИ»",
+    "oneLiner": "Готовый Markdown-шаблон прогноза по команде с коэффициентами, хранящийся в папке ИИ-шаблонов.",
     "coverUrl": "",
     "forWhom": [
-      "Редакция",
-      "Контент-менеджеры"
+      "Авторы прогнозов",
+      "Спортивные аналитики"
     ],
     "whoAffected": [
-      "Контент-команда"
+      "Редакция прогнозов"
     ],
     "whatImproves": [
-      "Скорость создания контента"
+      "Единообразие и скорость написания прогнозов"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-934",
@@ -759,16 +774,17 @@
   {
     "id": "hack-145",
     "title": "MR Analyzer",
-    "oneLiner": "MR Analyzer",
+    "oneLiner": "Автоанализ Merge Request: замечания по коду, метрики сложности и рекомендации ревьюеру.",
     "coverUrl": "",
     "forWhom": [
-      "Разработчики"
+      "Backend-разработчики",
+      "Код-ревьюеры"
     ],
     "whoAffected": [
-      "Техническая команда"
+      "Команда разработки"
     ],
     "whatImproves": [
-      "Процессы разработки"
+      "Качество и скорость код-ревью"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-145",
@@ -783,16 +799,16 @@
   {
     "id": "hack-242",
     "title": "Pochtalyon: дайджест и напоминания (Slack, почта, YT, календарь)",
-    "oneLiner": "Pochtalyon: дайджест и напоминания (Slack, почта, YT, календарь)",
+    "oneLiner": "Персональный дайджест и умные напоминания из Slack, почты, YouTrack и календаря в одном месте.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Все сотрудники"
     ],
     "whoAffected": [
-      "Компания"
+      "Все отделы"
     ],
     "whatImproves": [
-      "Автоматизация процессов"
+      "Управление информационным потоком сотрудника"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-242",
@@ -807,17 +823,17 @@
   {
     "id": "hack-50",
     "title": "Топ-10 — мини-игра «угадай топ» для фанатов",
-    "oneLiner": "Топ-10 — мини-игра «угадай топ» для фанатов",
+    "oneLiner": "Мини-игра «угадай топ-10»: фанаты составляют рейтинги игроков и сравнивают с реальными.",
     "coverUrl": "",
     "forWhom": [
-      "Пользователи",
-      "Фанаты"
+      "Продакт-менеджеры",
+      "Frontend-разработчики"
     ],
     "whoAffected": [
-      "Аудитория сайта"
+      "Спортивные фанаты"
     ],
     "whatImproves": [
-      "Вовлечённость аудитории"
+      "Вовлечённость аудитории на сайте"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-50",
@@ -832,17 +848,17 @@
   {
     "id": "hack-181",
     "title": "YouTrack баги → анализ частоты → Allure TestOps (покрытие/регресс) → тест-кейсы + отчёт в Slack",
-    "oneLiner": "YouTrack баги → анализ частоты → Allure TestOps (покрытие/регресс) → тест-кейсы + отчёт в Slack",
+    "oneLiner": "Цепочка: баги из YouTrack → частотный анализ → покрытие в Allure → автогенерация тест-кейсов.",
     "coverUrl": "",
     "forWhom": [
-      "QA-инженеры"
+      "QA-инженеры",
+      "QA-лиды"
     ],
     "whoAffected": [
-      "Разработка",
-      "QA"
+      "QA-отдел"
     ],
     "whatImproves": [
-      "Качество тестирования"
+      "Покрытие регрессионного тестирования"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-181",
@@ -857,16 +873,17 @@
   {
     "id": "hack-614",
     "title": "Отпуск: остаток, использовано, периоды (планы и прошлое), полная сводка — скилл Cursor под один источник",
-    "oneLiner": "Отпуск: остаток, использовано, периоды (планы и прошлое), полная сводка — скилл Cursor под один источник",
+    "oneLiner": "Скилл Cursor показывает остаток отпуска, использованные дни и будущие планы из одного источника.",
     "coverUrl": "",
     "forWhom": [
-      "HR"
+      "Все сотрудники",
+      "HR-менеджеры"
     ],
     "whoAffected": [
-      "Вся компания"
+      "Все отделы"
     ],
     "whatImproves": [
-      "HR-процессы"
+      "Прозрачность учёта отпусков"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-614",
@@ -881,16 +898,17 @@
   {
     "id": "hack-754",
     "title": "Bots Audit Tool — анализ бот-логов и приоритизированный бэклог",
-    "oneLiner": "Bots Audit Tool — анализ бот-логов и приоритизированный бэклог",
+    "oneLiner": "Анализирует логи Telegram-ботов компании, находит ошибки и формирует приоритизированный бэклог.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Backend-разработчики",
+      "Продакт-менеджеры"
     ],
     "whoAffected": [
-      "Пользователи сервиса"
+      "Команда разработки ботов"
     ],
     "whatImproves": [
-      "Автоматизация уведомлений"
+      "Стабильность работы Telegram-ботов"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-754",
@@ -905,17 +923,17 @@
   {
     "id": "hack-271",
     "title": "Автогенерация изображений для событийного контента",
-    "oneLiner": "Автогенерация изображений для событийного контента",
+    "oneLiner": "ИИ генерирует уникальные картинки для обложек спортивных событий без помощи дизайнера.",
     "coverUrl": "",
     "forWhom": [
-      "Редакция",
-      "Контент-менеджеры"
+      "Контент-менеджеры",
+      "Редакторы"
     ],
     "whoAffected": [
-      "Контент-команда"
+      "Редакция"
     ],
     "whatImproves": [
-      "Скорость создания контента"
+      "Скорость оформления событийного контента"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-271",
@@ -930,17 +948,17 @@
   {
     "id": "hack-846",
     "title": "Школа беттинга Metaratings — геймифицированная образовательная платформа",
-    "oneLiner": "Школа беттинга Metaratings — геймифицированная образовательная платформа",
+    "oneLiner": "Геймифицированная платформа для новичков в ставках: уроки, квизы, рейтинги, бейджи.",
     "coverUrl": "",
     "forWhom": [
-      "Монетизация"
+      "Продакт-менеджеры",
+      "Контент-менеджеры БК"
     ],
     "whoAffected": [
-      "Бизнес",
-      "Пользователи"
+      "Начинающие бетторы"
     ],
     "whatImproves": [
-      "Монетизация и конверсия"
+      "Образование аудитории в теме беттинга"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-846",
@@ -955,17 +973,17 @@
   {
     "id": "hack-459",
     "title": "Траст-метр: сервис проверки доменов букмекеров и казино — хакатон",
-    "oneLiner": "Траст-метр: сервис проверки доменов букмекеров и казино — хакатон",
+    "oneLiner": "Сервис проверяет домен букмекера или казино и выдаёт оценку доверия с обоснованием.",
     "coverUrl": "",
     "forWhom": [
-      "Монетизация"
+      "SEO-специалисты",
+      "Контент-менеджеры БК"
     ],
     "whoAffected": [
-      "Бизнес",
-      "Пользователи"
+      "Пользователи Metaratings"
     ],
     "whatImproves": [
-      "Монетизация и конверсия"
+      "Защита пользователей от мошеннических сайтов"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-459",
@@ -980,17 +998,18 @@
   {
     "id": "hack-526",
     "title": "Автоматический post-release мониторинг метрик ключевых страниц",
-    "oneLiner": "Автоматический post-release мониторинг метрик ключевых страниц",
+    "oneLiner": "После каждого релиза автоматически проверяет метрики ключевых страниц и сигналит о просадках.",
     "coverUrl": "",
     "forWhom": [
-      "Аналитики",
-      "Менеджеры"
+      "DevOps-инженеры",
+      "SEO-аналитики"
     ],
     "whoAffected": [
-      "Бизнес"
+      "Техническая команда",
+      "SEO-отдел"
     ],
     "whatImproves": [
-      "Аналитика и отчётность"
+      "Раннее обнаружение регрессий после деплоя"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-526",
@@ -1005,16 +1024,17 @@
   {
     "id": "hack-15",
     "title": "MCP-сервис и API endpoints для управления материалами Sports Media",
-    "oneLiner": "MCP-сервис и API endpoints для управления материалами Sports Media",
+    "oneLiner": "MCP-сервис и API для управления статьями Sports Media прямо из Cursor и AI-агентов.",
     "coverUrl": "",
     "forWhom": [
-      "Разработчики"
+      "Backend-разработчики",
+      "AI-инженеры"
     ],
     "whoAffected": [
-      "Техническая команда"
+      "Команда разработки"
     ],
     "whatImproves": [
-      "Процессы разработки"
+      "Интеграция CMS с AI-инструментами"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-15",
@@ -1029,17 +1049,17 @@
   {
     "id": "hack-8",
     "title": "Автономный агент авто-фикса багов по логам",
-    "oneLiner": "Автономный агент авто-фикса багов по логам",
+    "oneLiner": "Агент читает логи продакшена, находит баги и автоматически создаёт MR с исправлением.",
     "coverUrl": "",
     "forWhom": [
-      "DevOps",
-      "Разработчики"
+      "Backend-разработчики",
+      "DevOps-инженеры"
     ],
     "whoAffected": [
       "Техническая команда"
     ],
     "whatImproves": [
-      "Инфраструктура"
+      "Время устранения продакшен-багов"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-8",
@@ -1054,16 +1074,17 @@
   {
     "id": "hack-109",
     "title": "Помощник по почте конкурсов и таблицам",
-    "oneLiner": "Помощник по почте конкурсов и таблицам",
+    "oneLiner": "Автоматизирует рутину маркетолога: парсит почту конкурсов, заполняет таблицы участия.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Маркетологи",
+      "PR-менеджеры"
     ],
     "whoAffected": [
-      "Компания"
+      "Отдел маркетинга"
     ],
     "whatImproves": [
-      "Автоматизация процессов"
+      "Скорость обработки входящих предложений конкурсов"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-109",
@@ -1078,17 +1099,17 @@
   {
     "id": "hack-747",
     "title": "Dispatch Agent — персональный AI для рабочего контекста",
-    "oneLiner": "Dispatch Agent — персональный AI для рабочего контекста",
+    "oneLiner": "Персональный AI-ассистент, который знает контекст ваших задач, встреч и переписок.",
     "coverUrl": "",
     "forWhom": [
-      "Редакция",
-      "Контент-менеджеры"
+      "Руководители отделов",
+      "Продакт-менеджеры"
     ],
     "whoAffected": [
-      "Контент-команда"
+      "Менеджмент"
     ],
     "whatImproves": [
-      "Скорость создания контента"
+      "Персональная продуктивность менеджера"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-747",
@@ -1103,16 +1124,17 @@
   {
     "id": "hack-801",
     "title": "WoWScore (WinScore Vite Edition) — React + Capacitor + WinScore API",
-    "oneLiner": "WoWScore (WinScore Vite Edition) — React + Capacitor + WinScore API",
+    "oneLiner": "Мобильное приложение WinScore на React + Capacitor для отслеживания live-счёта матчей.",
     "coverUrl": "",
     "forWhom": [
-      "Разработчики"
+      "Frontend-разработчики",
+      "Продакт-менеджеры"
     ],
     "whoAffected": [
-      "Техническая команда"
+      "Мобильные пользователи"
     ],
     "whatImproves": [
-      "Процессы разработки"
+      "Доступность live-счёта на мобильных устройствах"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-801",
@@ -1127,17 +1149,17 @@
   {
     "id": "hack-1",
     "title": "AI Associate Template – шаблон разворачивания автономного агента в AWS",
-    "oneLiner": "AI Associate Template – шаблон разворачивания автономного агента в AWS",
+    "oneLiner": "Шаблон для разворачивания автономного AI-агента в AWS за 15 минут: от кода до продакшена.",
     "coverUrl": "",
     "forWhom": [
-      "DevOps",
-      "Разработчики"
+      "DevOps-инженеры",
+      "AI-инженеры"
     ],
     "whoAffected": [
-      "Техническая команда"
+      "Все отделы с AI-проектами"
     ],
     "whatImproves": [
-      "Инфраструктура"
+      "Скорость запуска новых AI-сервисов"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-1",
@@ -1152,16 +1174,18 @@
   {
     "id": "hack-656",
     "title": "Тренд-чекер: сбор инфоповодов, сферы, хайпометр, дайджест в Telegram",
-    "oneLiner": "Тренд-чекер: сбор инфоповодов, сферы, хайпометр, дайджест в Telegram",
+    "oneLiner": "Собирает инфоповоды из медиа, оценивает хайп и отправляет горячий дайджест в Telegram.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Контент-редакторы",
+      "Маркетологи"
     ],
     "whoAffected": [
-      "Пользователи сервиса"
+      "Редакция",
+      "Отдел маркетинга"
     ],
     "whatImproves": [
-      "Автоматизация уведомлений"
+      "Оперативность реагирования на тренды"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-656",
@@ -1176,16 +1200,16 @@
   {
     "id": "hack-941",
     "title": "CyberMeta Streamline: календарь релизов",
-    "oneLiner": "CyberMeta Streamline: календарь релизов",
+    "oneLiner": "Календарь киберспортивных релизов: не пропустите дату выхода турнира или обновления игры.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Киберспортивные редакторы"
     ],
     "whoAffected": [
-      "Компания"
+      "Редакция CyberMeta"
     ],
     "whatImproves": [
-      "Автоматизация процессов"
+      "Планирование киберспортивного контента"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-941",
@@ -1200,16 +1224,17 @@
   {
     "id": "hack-808",
     "title": "Автономная AI-среда и Linear (оркестрация процессов)",
-    "oneLiner": "Автономная AI-среда и Linear (оркестрация процессов)",
+    "oneLiner": "AI-среда с Linear-интеграцией: агенты сами берут задачи, выполняют и двигают по доске.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Тимлиды",
+      "AI-инженеры"
     ],
     "whoAffected": [
-      "Компания"
+      "Техническая команда"
     ],
     "whatImproves": [
-      "Автоматизация процессов"
+      "Автономность выполнения рутинных задач"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-808",
@@ -1224,17 +1249,17 @@
   {
     "id": "hack-102",
     "title": "AI QA Workflow Assistant для контентного QA в Sports Media",
-    "oneLiner": "AI QA Workflow Assistant для контентного QA в Sports Media",
+    "oneLiner": "AI-ассистент для QA контента: проверяет материалы Sports Media по чеклисту качества.",
     "coverUrl": "",
     "forWhom": [
-      "QA-инженеры"
+      "QA-контента",
+      "Контент-менеджеры"
     ],
     "whoAffected": [
-      "Разработка",
-      "QA"
+      "Редакция"
     ],
     "whatImproves": [
-      "Качество тестирования"
+      "Систематичность проверки контента перед публикацией"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-102",
@@ -1249,16 +1274,17 @@
   {
     "id": "hack-467",
     "title": "SEO Health Monitor",
-    "oneLiner": "SEO Health Monitor",
+    "oneLiner": "Панель здоровья SEO: ежедневная проверка индексации, скорости, битых ссылок и мета-тегов.",
     "coverUrl": "",
     "forWhom": [
-      "SEO-специалисты"
+      "SEO-специалисты",
+      "SEO-тимлид"
     ],
     "whoAffected": [
       "SEO-отдел"
     ],
     "whatImproves": [
-      "SEO-эффективность"
+      "Раннее обнаружение SEO-проблем на сайте"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-467",
@@ -1273,16 +1299,17 @@
   {
     "id": "hack-383",
     "title": "Agent swarm for expiring AI usage: docs hygiene + ANL research acceleration",
-    "oneLiner": "Agent swarm for expiring AI usage: docs hygiene + ANL research acceleration",
+    "oneLiner": "Рой агентов следит за актуальностью AI-документации и ускоряет исследования аналитиков.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Аналитики",
+      "AI-инженеры"
     ],
     "whoAffected": [
-      "Компания"
+      "Отдел аналитики"
     ],
     "whatImproves": [
-      "Автоматизация процессов"
+      "Актуальность внутренней документации AI-проектов"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-383",
@@ -1297,16 +1324,17 @@
   {
     "id": "hack-174",
     "title": "PBN: линк-чекер сети (uptime и ссылки)",
-    "oneLiner": "PBN: линк-чекер сети (uptime и ссылки)",
+    "oneLiner": "Проверяет uptime и наличие ссылок на всех сателлитах PBN-сети в режиме реального времени.",
     "coverUrl": "",
     "forWhom": [
+      "Линкбилдеры",
       "SEO-специалисты"
     ],
     "whoAffected": [
       "SEO-отдел"
     ],
     "whatImproves": [
-      "SEO-эффективность"
+      "Контроль работоспособности PBN-сети"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-174",
@@ -1321,17 +1349,16 @@
   {
     "id": "hack-949",
     "title": "Агрегатор актуальных новостей СМИ Казахстана",
-    "oneLiner": "Агрегатор актуальных новостей СМИ Казахстана",
+    "oneLiner": "Агрегатор спортивных новостей из казахстанских СМИ для редакции локальной версии сайта.",
     "coverUrl": "",
     "forWhom": [
-      "Редакция",
-      "Контент-менеджеры"
+      "Редакторы казахстанского контента"
     ],
     "whoAffected": [
-      "Контент-команда"
+      "Казахстанская редакция"
     ],
     "whatImproves": [
-      "Скорость создания контента"
+      "Покрытие новостной повестки Казахстана"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-949",
@@ -1346,16 +1373,16 @@
   {
     "id": "hack-956",
     "title": "Telegram-бот: расшифровка аудио/видео (Gemini)",
-    "oneLiner": "Telegram-бот: расшифровка аудио/видео (Gemini)",
+    "oneLiner": "Telegram-бот расшифровывает аудио и видеосообщения в текст через Gemini за секунды.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Все сотрудники"
     ],
     "whoAffected": [
-      "Пользователи сервиса"
+      "Все отделы"
     ],
     "whatImproves": [
-      "Автоматизация уведомлений"
+      "Удобство работы с голосовыми сообщениями"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-956",
@@ -1370,17 +1397,17 @@
   {
     "id": "hack-642",
     "title": "Palpite: вычитка черновиков в Google Docs (Cursor)",
-    "oneLiner": "Palpite: вычитка черновиков в Google Docs (Cursor)",
+    "oneLiner": "Вычитывает черновики прогнозов в Google Docs из Cursor: грамматика, стиль, фактчек.",
     "coverUrl": "",
     "forWhom": [
-      "Редакция",
-      "Контент-менеджеры"
+      "Авторы прогнозов",
+      "Контент-редакторы"
     ],
     "whoAffected": [
-      "Контент-команда"
+      "Бразильская редакция"
     ],
     "whatImproves": [
-      "Скорость создания контента"
+      "Качество текстов до публикации"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-642",
@@ -1395,17 +1422,17 @@
   {
     "id": "hack-514",
     "title": "Автодеплой env на dev-стенд из Deploy Notes",
-    "oneLiner": "Автодеплой env на dev-стенд из Deploy Notes",
+    "oneLiner": "Один клик — и нужный env разворачивается на dev-стенде прямо из Deploy Notes задачи.",
     "coverUrl": "",
     "forWhom": [
-      "DevOps",
-      "Разработчики"
+      "Backend-разработчики",
+      "DevOps-инженеры"
     ],
     "whoAffected": [
       "Техническая команда"
     ],
     "whatImproves": [
-      "Инфраструктура"
+      "Время настройки тестовых окружений"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-514",
@@ -1420,16 +1447,17 @@
   {
     "id": "hack-675",
     "title": "Автогенерация прогнозов киберспорта по SEO-шаблону и ИИ",
-    "oneLiner": "Автогенерация прогнозов киберспорта по SEO-шаблону и ИИ",
+    "oneLiner": "ИИ генерирует прогнозы по киберспортивным матчам на базе SEO-шаблонов и актуальной статистики.",
     "coverUrl": "",
     "forWhom": [
-      "SEO-специалисты"
+      "Киберспортивные редакторы",
+      "SEO-контент-менеджеры"
     ],
     "whoAffected": [
-      "SEO-отдел"
+      "Редакция CyberMeta"
     ],
     "whatImproves": [
-      "SEO-эффективность"
+      "Объём и скорость выпуска киберспортивных прогнозов"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-675",
@@ -1444,7 +1472,7 @@
   {
     "id": "hack-861",
     "title": "Оркестр доменных агентов для префлайта задач перед PBR",
-    "oneLiner": "Оркестр доменных агентов для префлайта задач перед PBR",
+    "oneLiner": "Группа специализированных агентов проверяет задачи перед PBR: полнота, зависимости, риски.",
     "coverUrl": "",
     "forWhom": [
       "Продакт-менеджеры",
@@ -1454,7 +1482,7 @@
       "Продуктовые команды"
     ],
     "whatImproves": [
-      "Управление задачами"
+      "Качество подготовки задач к PBR"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-861",
@@ -1469,16 +1497,17 @@
   {
     "id": "hack-58",
     "title": "Предупреждения при назначении и спринте с учётом отпусков (Google Calendar)",
-    "oneLiner": "Предупреждения при назначении и спринте с учётом отпусков (Google Calendar)",
+    "oneLiner": "Не дадим назначить задачу тому, кто в отпуске — алерты при назначении и планировании спринта.",
     "coverUrl": "",
     "forWhom": [
-      "HR"
+      "Тимлиды",
+      "Продакт-менеджеры"
     ],
     "whoAffected": [
-      "Вся компания"
+      "Все проектные команды"
     ],
     "whatImproves": [
-      "HR-процессы"
+      "Точность ресурсного планирования"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-58",
@@ -1493,16 +1522,17 @@
   {
     "id": "hack-220",
     "title": "Телеграм-бот: грамматика и стиль новостей Metaratings",
-    "oneLiner": "Телеграм-бот: грамматика и стиль новостей Metaratings",
+    "oneLiner": "Telegram-бот вычитывает новости Metaratings на грамматику и стиль перед публикацией.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Спортивные редакторы",
+      "Корректоры"
     ],
     "whoAffected": [
-      "Пользователи сервиса"
+      "Редакция"
     ],
     "whatImproves": [
-      "Автоматизация уведомлений"
+      "Грамотность и стилистика публикуемых новостей"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-220",
@@ -1517,17 +1547,17 @@
   {
     "id": "hack-227",
     "title": "Мониторинг актуальности бонусов Metaratings.tj",
-    "oneLiner": "Мониторинг актуальности бонусов Metaratings.tj",
+    "oneLiner": "Мониторит актуальность бонусных предложений на сайте Metaratings.tj и сигналит о просрочке.",
     "coverUrl": "",
     "forWhom": [
-      "Аналитики",
-      "Менеджеры"
+      "Контент-менеджеры БК",
+      "Региональные менеджеры"
     ],
     "whoAffected": [
-      "Бизнес"
+      "Таджикистанская редакция"
     ],
     "whatImproves": [
-      "Аналитика и отчётность"
+      "Актуальность бонусного контента для TJ"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-227",
@@ -1542,17 +1572,17 @@
   {
     "id": "hack-874",
     "title": "Brazuca AI-Editor — pt-BR прогнозы из статистики",
-    "oneLiner": "Brazuca AI-Editor — pt-BR прогнозы из статистики",
+    "oneLiner": "ИИ-редактор генерирует спортивные прогнозы на бразильском португальском из данных статистики.",
     "coverUrl": "",
     "forWhom": [
-      "Редакция",
-      "Контент-менеджеры"
+      "Бразильские контент-менеджеры",
+      "SEO-контент-менеджеры"
     ],
     "whoAffected": [
-      "Контент-команда"
+      "Бразильская редакция"
     ],
     "whatImproves": [
-      "Скорость создания контента"
+      "Объём контента на pt-BR"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-874",
@@ -1567,17 +1597,17 @@
   {
     "id": "hack-921",
     "title": "Ставочные новости — адаптация черновика под эксклюзивный формат в Cursor",
-    "oneLiner": "Ставочные новости — адаптация черновика под эксклюзивный формат в Cursor",
+    "oneLiner": "Cursor-скилл превращает черновик новости в эксклюзивный формат ставочных новостей Metaratings.",
     "coverUrl": "",
     "forWhom": [
-      "Редакция",
-      "Контент-менеджеры"
+      "Спортивные редакторы",
+      "Авторы ставочного контента"
     ],
     "whoAffected": [
-      "Контент-команда"
+      "Редакция"
     ],
     "whatImproves": [
-      "Скорость создания контента"
+      "Скорость оформления эксклюзивных новостей"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-921",
@@ -1592,16 +1622,17 @@
   {
     "id": "hack-838",
     "title": "Telegram-бот: H1 и URL для редакторов",
-    "oneLiner": "Telegram-бот: H1 и URL для редакторов",
+    "oneLiner": "Бот подсказывает редактору оптимальный H1 и URL для материала прямо в Telegram.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Спортивные редакторы",
+      "SEO-специалисты"
     ],
     "whoAffected": [
-      "Пользователи сервиса"
+      "Редакция"
     ],
     "whatImproves": [
-      "Автоматизация уведомлений"
+      "SEO-оптимизация заголовков на этапе создания"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-838",
@@ -1616,17 +1647,17 @@
   {
     "id": "hack-555",
     "title": "Автоматизация ежемесячной отчетности по рекламным креативам Metaratings",
-    "oneLiner": "Автоматизация ежемесячной отчетности по рекламным креативам Metaratings",
+    "oneLiner": "Собирает данные по рекламным креативам Metaratings и формирует ежемесячный отчёт автоматически.",
     "coverUrl": "",
     "forWhom": [
-      "Аналитики",
-      "Менеджеры"
+      "Маркетологи",
+      "Дизайнеры рекламных креативов"
     ],
     "whoAffected": [
-      "Бизнес"
+      "Отдел маркетинга"
     ],
     "whatImproves": [
-      "Аналитика и отчётность"
+      "Скорость подготовки отчётности по рекламе"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-555",
@@ -1641,17 +1672,16 @@
   {
     "id": "hack-909",
     "title": "ИИ-автор черновиков КиберМеты",
-    "oneLiner": "ИИ-автор черновиков КиберМеты",
+    "oneLiner": "ИИ пишет черновики материалов для CyberMeta, редактор только правит и публикует.",
     "coverUrl": "",
     "forWhom": [
-      "Редакция",
-      "Контент-менеджеры"
+      "Киберспортивные редакторы"
     ],
     "whoAffected": [
-      "Контент-команда"
+      "Редакция CyberMeta"
     ],
     "whatImproves": [
-      "Скорость создания контента"
+      "Скорость наполнения CyberMeta контентом"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-909",
@@ -1666,17 +1696,17 @@
   {
     "id": "hack-264",
     "title": "QA Watcher Agent — автоанализ задач и проверка по плану",
-    "oneLiner": "QA Watcher Agent — автоанализ задач и проверка по плану",
+    "oneLiner": "Агент автоматически проверяет задачу по QA-плану и сигналит о пропущенных кейсах.",
     "coverUrl": "",
     "forWhom": [
-      "QA-инженеры"
+      "QA-инженеры",
+      "QA-лиды"
     ],
     "whoAffected": [
-      "Разработка",
-      "QA"
+      "QA-отдел"
     ],
     "whatImproves": [
-      "Качество тестирования"
+      "Полнота тестового покрытия задач"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-264",
@@ -1691,17 +1721,17 @@
   {
     "id": "hack-559",
     "title": "Интервью → новости + видео-сценарий",
-    "oneLiner": "Интервью → новости + видео-сценарий",
+    "oneLiner": "Из интервью со спикером — готовая новость и видео-сценарий в два клика.",
     "coverUrl": "",
     "forWhom": [
-      "Редакция",
-      "Контент-менеджеры"
+      "Спортивные журналисты",
+      "Видеопродюсеры"
     ],
     "whoAffected": [
-      "Контент-команда"
+      "Редакция"
     ],
     "whatImproves": [
-      "Скорость создания контента"
+      "Скорость производства контента из интервью"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-559",
@@ -1718,17 +1748,17 @@
   {
     "id": "hack-197",
     "title": "Календарь матчей и прогнозов — автообновление Google Таблицы",
-    "oneLiner": "Календарь матчей и прогнозов — автообновление Google Таблицы",
+    "oneLiner": "Google Таблица с календарём матчей и прогнозов обновляется автоматически без ручного ввода.",
     "coverUrl": "",
     "forWhom": [
-      "Редакция",
-      "Контент-менеджеры"
+      "Авторы прогнозов",
+      "Контент-планировщики"
     ],
     "whoAffected": [
-      "Контент-команда"
+      "Редакция прогнозов"
     ],
     "whatImproves": [
-      "Скорость создания контента"
+      "Актуальность расписания матчей и прогнозов"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-197",
@@ -1743,16 +1773,17 @@
   {
     "id": "hack-495",
     "title": "Скилл: фото для обложек (спикер, клуб/федерация)",
-    "oneLiner": "Скилл: фото для обложек (спикер, клуб/федерация)",
+    "oneLiner": "Cursor-скилл подбирает фото спикера, клуба или федерации для обложки материала.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Контент-менеджеры",
+      "Редакторы"
     ],
     "whoAffected": [
-      "Компания"
+      "Редакция"
     ],
     "whatImproves": [
-      "Автоматизация процессов"
+      "Скорость подбора обложек для публикаций"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-495",
@@ -1767,16 +1798,17 @@
   {
     "id": "hack-204",
     "title": "Ad Campaign Autopilot — автоматизация подготовки рекламных кампаний",
-    "oneLiner": "Ad Campaign Autopilot — автоматизация подготовки рекламных кампаний",
+    "oneLiner": "Автопилот рекламных кампаний: от медиаплана до креативов и настройки таргетинга.",
     "coverUrl": "",
     "forWhom": [
-      "Маркетинг"
+      "Маркетологи",
+      "Специалисты по рекламе"
     ],
     "whoAffected": [
-      "Бизнес"
+      "Отдел маркетинга"
     ],
     "whatImproves": [
-      "Эффективность рекламы"
+      "Скорость запуска рекламных кампаний"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-204",
@@ -1791,16 +1823,17 @@
   {
     "id": "hack-131",
     "title": "Генератор промо-лендингов с бонусами через админку Sports Media",
-    "oneLiner": "Генератор промо-лендингов с бонусами через админку Sports Media",
+    "oneLiner": "Генерирует промо-лендинги с бонусами БК через админку Sports Media без верстальщика.",
     "coverUrl": "",
     "forWhom": [
-      "Маркетинг"
+      "Контент-менеджеры БК",
+      "Маркетологи"
     ],
     "whoAffected": [
-      "Бизнес"
+      "Отдел монетизации"
     ],
     "whatImproves": [
-      "Эффективность рекламы"
+      "Скорость запуска промо-страниц"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-131",
@@ -1815,16 +1848,17 @@
   {
     "id": "hack-414",
     "title": "Мониторинг вакансий hh.ru ↔ сайт компании",
-    "oneLiner": "Мониторинг вакансий hh.ru ↔ сайт компании",
+    "oneLiner": "Сравнивает вакансии на hh.ru с карьерной страницей и сигналит о расхождениях.",
     "coverUrl": "",
     "forWhom": [
-      "HR"
+      "HR-рекрутеры",
+      "HR-менеджеры"
     ],
     "whoAffected": [
-      "Вся компания"
+      "HR-отдел"
     ],
     "whatImproves": [
-      "HR-процессы"
+      "Консистентность описаний вакансий"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-414",
@@ -1839,16 +1873,16 @@
   {
     "id": "hack-29",
     "title": "Props — внутреннее приложение благодарностей коллегам",
-    "oneLiner": "Props — внутреннее приложение благодарностей коллегам",
+    "oneLiner": "Внутренний сервис благодарностей: скажи «спасибо» коллеге, видно всей компании.",
     "coverUrl": "",
     "forWhom": [
-      "HR"
+      "Все сотрудники"
     ],
     "whoAffected": [
-      "Вся компания"
+      "Все сотрудники"
     ],
     "whatImproves": [
-      "HR-процессы"
+      "Культура признания заслуг внутри компании"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-29",
@@ -1863,16 +1897,17 @@
   {
     "id": "hack-434",
     "title": "Автосбор regs/FTD из партнёрских API в Google Таблицу (пилот 3–5 партнёров, хакатон) + триггер Apps Script",
-    "oneLiner": "Автосбор regs/FTD из партнёрских API в Google Таблицу (пилот 3–5 партнёров, хакатон) + триггер Apps Script",
+    "oneLiner": "Автоматически собирает регистрации и FTD из партнёрских API букмекеров в Google Таблицу.",
     "coverUrl": "",
     "forWhom": [
-      "Разработчики"
+      "Affiliate-менеджеры",
+      "Аналитики монетизации"
     ],
     "whoAffected": [
-      "Техническая команда"
+      "Отдел монетизации"
     ],
     "whatImproves": [
-      "Процессы разработки"
+      "Оперативность сбора партнёрской статистики"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-434",
@@ -1887,16 +1922,17 @@
   {
     "id": "hack-72",
     "title": "Кастомные напоминалки о бизнес-процессах",
-    "oneLiner": "Кастомные напоминалки о бизнес-процессах",
+    "oneLiner": "Настраиваемые напоминания о бизнес-процессах: дедлайны, повторяющиеся задачи, ревью.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Руководители отделов",
+      "Продакт-менеджеры"
     ],
     "whoAffected": [
-      "Компания"
+      "Менеджмент"
     ],
     "whatImproves": [
-      "Автоматизация процессов"
+      "Соблюдение регламентов и дедлайнов"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-72",
@@ -1911,16 +1947,17 @@
   {
     "id": "hack-95",
     "title": "Discovery: Telegram-сигналы → скоринг → Discovery Backlog в YouTrack",
-    "oneLiner": "Discovery: Telegram-сигналы → скоринг → Discovery Backlog в YouTrack",
+    "oneLiner": "Telegram-сигналы проходят скоринг и превращаются в продуктовые гипотезы в Discovery-бэклоге.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Продакт-менеджеры",
+      "Аналитики"
     ],
     "whoAffected": [
-      "Пользователи сервиса"
+      "Продуктовые команды"
     ],
     "whatImproves": [
-      "Автоматизация уведомлений"
+      "Систематизация входящих продуктовых идей"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-95",
@@ -1935,16 +1972,17 @@
   {
     "id": "hack-235",
     "title": "Онбординг Back Office: скилл Cursor и материалы",
-    "oneLiner": "Онбординг Back Office: скилл Cursor и материалы",
+    "oneLiner": "Cursor-скилл проводит нового сотрудника Back Office через онбординг: документы, доступы, гайды.",
     "coverUrl": "",
     "forWhom": [
-      "HR"
+      "HR-менеджеры",
+      "Новые сотрудники"
     ],
     "whoAffected": [
-      "Вся компания"
+      "Back Office"
     ],
     "whatImproves": [
-      "HR-процессы"
+      "Скорость и полнота адаптации новичков"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-235",
@@ -1959,16 +1997,17 @@
   {
     "id": "hack-160",
     "title": "SEO Sentinel — автономный мониторинг позиций, конкурентов и реагирование",
-    "oneLiner": "SEO Sentinel — автономный мониторинг позиций, конкурентов и реагирование",
+    "oneLiner": "Автономный агент мониторит позиции, следит за конкурентами и сам запускает SEO-реагирование.",
     "coverUrl": "",
     "forWhom": [
-      "SEO-специалисты"
+      "SEO-стратеги",
+      "SEO-тимлид"
     ],
     "whoAffected": [
       "SEO-отдел"
     ],
     "whatImproves": [
-      "SEO-эффективность"
+      "Скорость реакции на падение позиций"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-160",
@@ -1983,17 +2022,17 @@
   {
     "id": "hack-368",
     "title": "Рынки предсказаний: темы, вероятности, актуальность",
-    "oneLiner": "Рынки предсказаний: темы, вероятности, актуальность",
+    "oneLiner": "Рынки предсказаний на спортивные события: темы, вероятности, актуальность для контента.",
     "coverUrl": "",
     "forWhom": [
-      "Пользователи",
-      "Фанаты"
+      "Контент-менеджеры",
+      "Спортивные аналитики"
     ],
     "whoAffected": [
-      "Аудитория сайта"
+      "Редакция"
     ],
     "whatImproves": [
-      "Вовлечённость аудитории"
+      "Разнообразие контента для вовлечения аудитории"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-368",
@@ -2008,16 +2047,17 @@
   {
     "id": "hack-116",
     "title": "CSAT Metaratings: виджет, микросервис, Slack",
-    "oneLiner": "CSAT Metaratings: виджет, микросервис, Slack",
+    "oneLiner": "Виджет оценки удовлетворённости на сайте: сбор фидбека, микросервис, алерты в Slack.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Продакт-менеджеры",
+      "UX-дизайнеры"
     ],
     "whoAffected": [
-      "Компания"
+      "Пользователи Metaratings"
     ],
     "whatImproves": [
-      "Автоматизация процессов"
+      "Сбор обратной связи от пользователей сайта"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-116",
@@ -2032,16 +2072,17 @@
   {
     "id": "hack-205",
     "title": "Zero to Live: автоматизированный SEO-цикл от текста до индексации в Google",
-    "oneLiner": "Zero to Live: автоматизированный SEO-цикл от текста до индексации в Google",
+    "oneLiner": "Полный цикл от написания текста до индексации в Google — SEO-автоматизация «под ключ».",
     "coverUrl": "",
     "forWhom": [
+      "SEO-контент-менеджеры",
       "SEO-специалисты"
     ],
     "whoAffected": [
       "SEO-отдел"
     ],
     "whatImproves": [
-      "SEO-эффективность"
+      "Время от создания контента до попадания в индекс"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-205",
@@ -2056,16 +2097,18 @@
   {
     "id": "hack-182",
     "title": "InsightsTube — дайджест идей с YouTube",
-    "oneLiner": "InsightsTube — дайджест идей с YouTube",
+    "oneLiner": "Собирает ключевые идеи из YouTube-видео в компактный дайджест для быстрого ознакомления.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Контент-менеджеры",
+      "Маркетологи"
     ],
     "whoAffected": [
-      "Компания"
+      "Редакция",
+      "Отдел маркетинга"
     ],
     "whatImproves": [
-      "Автоматизация процессов"
+      "Экономия времени при анализе видеоконтента"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-182",
@@ -2080,16 +2123,17 @@
   {
     "id": "hack-189",
     "title": "Автоматизация внутренней перелинковки",
-    "oneLiner": "Автоматизация внутренней перелинковки",
+    "oneLiner": "Автоматически проставляет внутренние ссылки между статьями сайта по семантической близости.",
     "coverUrl": "",
     "forWhom": [
-      "SEO-специалисты"
+      "SEO-специалисты",
+      "Контент-менеджеры"
     ],
     "whoAffected": [
       "SEO-отдел"
     ],
     "whatImproves": [
-      "SEO-эффективность"
+      "Глубина внутренней перелинковки сайта"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-189",
@@ -2104,17 +2148,17 @@
   {
     "id": "hack-88",
     "title": "Гео-отчёты TelecomAsia: GSC → Sheets → email → YouTrack",
-    "oneLiner": "Гео-отчёты TelecomAsia: GSC → Sheets → email → YouTrack",
+    "oneLiner": "Пайплайн гео-отчётов TelecomAsia: данные из GSC → Sheets → email менеджерам → задача в YouTrack.",
     "coverUrl": "",
     "forWhom": [
-      "Аналитики",
-      "Менеджеры"
+      "SEO-менеджеры",
+      "Региональные менеджеры"
     ],
     "whoAffected": [
-      "Бизнес"
+      "Команда TelecomAsia"
     ],
     "whatImproves": [
-      "Аналитика и отчётность"
+      "Автоматизация региональной SEO-отчётности"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-88",
@@ -2129,17 +2173,18 @@
   {
     "id": "hack-234",
     "title": "Smart Regression System — Система интеллектуального регрессионного тестирования",
-    "oneLiner": "Smart Regression System — Система интеллектуального регрессионного тестирования",
+    "oneLiner": "ИИ выбирает, какие тесты запускать при каждом изменении, сокращая время регрессии вдвое.",
     "coverUrl": "",
     "forWhom": [
-      "QA-инженеры"
+      "QA-инженеры",
+      "QA-лиды"
     ],
     "whoAffected": [
-      "Разработка",
-      "QA"
+      "QA-отдел",
+      "Разработка"
     ],
     "whatImproves": [
-      "Качество тестирования"
+      "Скорость регрессионного тестирования"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-234",
@@ -2154,16 +2199,17 @@
   {
     "id": "hack-34",
     "title": "Оценочный сервис для МЦ",
-    "oneLiner": "Оценочный сервис для МЦ",
+    "oneLiner": "Сервис оценки медийных центров: скоринг площадок по метрикам для внутренних нужд.",
     "coverUrl": "",
     "forWhom": [
+      "Аналитики",
       "Продакт-менеджеры"
     ],
     "whoAffected": [
-      "Продуктовые команды"
+      "Отдел монетизации"
     ],
     "whatImproves": [
-      "Точность оценок"
+      "Объективность оценки медийных площадок"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-34",
@@ -2178,16 +2224,17 @@
   {
     "id": "hack-542",
     "title": "Дайджест алертов Telegram и задач YouTrack в Slack",
-    "oneLiner": "Дайджест алертов Telegram и задач YouTrack в Slack",
+    "oneLiner": "Всё важное из Telegram-алертов и YouTrack-задач — в ежедневном Slack-дайджесте для команды.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Тимлиды",
+      "DevOps-инженеры"
     ],
     "whoAffected": [
-      "Пользователи сервиса"
+      "Техническая команда"
     ],
     "whatImproves": [
-      "Автоматизация уведомлений"
+      "Централизация уведомлений в одном канале"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-542",
@@ -2202,17 +2249,17 @@
   {
     "id": "hack-375",
     "title": "Paul 2.0 — Осьминог-предсказатель ЧМ-2026",
-    "oneLiner": "Paul 2.0 — Осьминог-предсказатель ЧМ-2026",
+    "oneLiner": "Осьминог Paul 2.0 предсказывает результаты матчей ЧМ-2026 с помощью ИИ и статистики.",
     "coverUrl": "",
     "forWhom": [
-      "Пользователи",
-      "Фанаты"
+      "Контент-менеджеры",
+      "Маркетологи"
     ],
     "whoAffected": [
-      "Аудитория сайта"
+      "Читатели Metaratings"
     ],
     "whatImproves": [
-      "Вовлечённость аудитории"
+      "Виральность и развлекательность контента к ЧМ-2026"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-375",
@@ -2227,17 +2274,17 @@
   {
     "id": "hack-780",
     "title": "Актуализация обновляемого контента: пакет данных в Cursor (скилл/источники)",
-    "oneLiner": "Актуализация обновляемого контента: пакет данных в Cursor (скилл/источники)",
+    "oneLiner": "Cursor-скилл обновляет устаревший контент, подтягивая свежие данные из источников.",
     "coverUrl": "",
     "forWhom": [
-      "Редакция",
-      "Контент-менеджеры"
+      "Контент-менеджеры",
+      "SEO-редакторы"
     ],
     "whoAffected": [
-      "Контент-команда"
+      "Редакция"
     ],
     "whatImproves": [
-      "Скорость создания контента"
+      "Актуальность обновляемого контента на сайте"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-780",
@@ -2252,17 +2299,17 @@
   {
     "id": "hack-460",
     "title": "Автоматическое расписание смен редакторов (YAML → Markdown)",
-    "oneLiner": "Автоматическое расписание смен редакторов (YAML → Markdown)",
+    "oneLiner": "Из YAML-конфигурации генерирует расписание смен редакторов в читаемый Markdown.",
     "coverUrl": "",
     "forWhom": [
-      "Редакция",
-      "Контент-менеджеры"
+      "Главные редакторы",
+      "Шеф-редакторы"
     ],
     "whoAffected": [
-      "Контент-команда"
+      "Редакция"
     ],
     "whatImproves": [
-      "Скорость создания контента"
+      "Прозрачность расписания дежурств редакции"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-460",
@@ -2277,16 +2324,18 @@
   {
     "id": "hack-65",
     "title": "Impact site changes — веб-интерфейс с графиками",
-    "oneLiner": "Impact site changes — веб-интерфейс с графиками",
+    "oneLiner": "Веб-интерфейс с графиками: как каждое изменение на сайте влияет на ключевые метрики.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "SEO-аналитики",
+      "Продакт-менеджеры"
     ],
     "whoAffected": [
-      "Компания"
+      "SEO-отдел",
+      "Продуктовые команды"
     ],
     "whatImproves": [
-      "Автоматизация процессов"
+      "Видимость влияния релизов на трафик"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-65",
@@ -2301,16 +2350,17 @@
   {
     "id": "hack-22",
     "title": "Пайплайн Ahrefs CSV → SERP — приоритизация линкбилдинга",
-    "oneLiner": "Пайплайн Ahrefs CSV → SERP — приоритизация линкбилдинга",
+    "oneLiner": "Пайплайн превращает CSV из Ahrefs в приоритезированный список страниц для линкбилдинга.",
     "coverUrl": "",
     "forWhom": [
-      "SEO-специалисты"
+      "Линкбилдеры",
+      "SEO-стратеги"
     ],
     "whoAffected": [
       "SEO-отдел"
     ],
     "whatImproves": [
-      "SEO-эффективность"
+      "Приоритизация задач линкбилдинга"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-22",
@@ -2325,17 +2375,17 @@
   {
     "id": "hack-399",
     "title": "TZChecker – автопроверка текстов на соответствие ТЗ",
-    "oneLiner": "TZChecker – автопроверка текстов на соответствие ТЗ",
+    "oneLiner": "Автопроверка: сравнивает готовый текст с ТЗ и показывает, что упущено или не соответствует.",
     "coverUrl": "",
     "forWhom": [
-      "Редакция",
-      "Контент-менеджеры"
+      "Контент-менеджеры",
+      "Корректоры"
     ],
     "whoAffected": [
-      "Контент-команда"
+      "Редакция"
     ],
     "whatImproves": [
-      "Скорость создания контента"
+      "Соответствие текстов техническому заданию"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-399",
@@ -2350,17 +2400,18 @@
   {
     "id": "hack-579",
     "title": "Мониторинг разметки GA4 события click_on_bk_web (промоссылки → БК)",
-    "oneLiner": "Мониторинг разметки GA4 события click_on_bk_web (промоссылки → БК)",
+    "oneLiner": "Мониторит разметку GA4-событий на промоссылках к букмекерам и сигналит о поломках.",
     "coverUrl": "",
     "forWhom": [
       "Аналитики",
-      "Менеджеры"
+      "Маркетологи"
     ],
     "whoAffected": [
-      "Бизнес"
+      "Отдел аналитики",
+      "Монетизация"
     ],
     "whatImproves": [
-      "Аналитика и отчётность"
+      "Достоверность данных по кликам на букмекеров"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-579",
@@ -2375,17 +2426,17 @@
   {
     "id": "hack-213",
     "title": "Квизы из новостей: ИИ, игра в браузере, выгрузка в админку",
-    "oneLiner": "Квизы из новостей: ИИ, игра в браузере, выгрузка в админку",
+    "oneLiner": "ИИ создаёт квизы по спортивным новостям, запускает их в браузере и выгружает в админку.",
     "coverUrl": "",
     "forWhom": [
-      "Редакция",
-      "Контент-менеджеры"
+      "Контент-менеджеры",
+      "Frontend-разработчики"
     ],
     "whoAffected": [
-      "Контент-команда"
+      "Читатели Metaratings"
     ],
     "whatImproves": [
-      "Скорость создания контента"
+      "Интерактивность и вовлечённость аудитории"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-213",
@@ -2400,17 +2451,17 @@
   {
     "id": "hack-773",
     "title": "Django Unchained — Autonomous Dev Pipeline",
-    "oneLiner": "Django Unchained — Autonomous Dev Pipeline",
+    "oneLiner": "Автономный конвейер разработки на Django: агенты пишут, тестируют и деплоят код сами.",
     "coverUrl": "",
     "forWhom": [
-      "DevOps",
-      "Разработчики"
+      "Backend-разработчики",
+      "Тимлиды"
     ],
     "whoAffected": [
-      "Техническая команда"
+      "Команда разработки"
     ],
     "whatImproves": [
-      "Инфраструктура"
+      "Автоматизация рутинных задач разработки"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-773",
@@ -2425,16 +2476,17 @@
   {
     "id": "hack-765",
     "title": "Автопостинг новостей в Telegram, VK и MAX",
-    "oneLiner": "Автопостинг новостей в Telegram, VK и MAX",
+    "oneLiner": "Автопостинг спортивных новостей одновременно в Telegram, VK и MAX из одного источника.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "SMM-менеджеры",
+      "Контент-менеджеры"
     ],
     "whoAffected": [
-      "Пользователи сервиса"
+      "Отдел маркетинга"
     ],
     "whatImproves": [
-      "Автоматизация уведомлений"
+      "Охват аудитории в соцсетях"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-765",
@@ -2449,17 +2501,17 @@
   {
     "id": "hack-720",
     "title": "AI Forecast Editor — улучшение прогнозов через LLM",
-    "oneLiner": "AI Forecast Editor — улучшение прогнозов через LLM",
+    "oneLiner": "LLM дорабатывает черновик прогноза: улучшает аргументацию, добавляет статистику, чистит стиль.",
     "coverUrl": "",
     "forWhom": [
-      "Редакция",
-      "Контент-менеджеры"
+      "Авторы прогнозов",
+      "Спортивные аналитики"
     ],
     "whoAffected": [
-      "Контент-команда"
+      "Редакция прогнозов"
     ],
     "whatImproves": [
-      "Скорость создания контента"
+      "Качество и убедительность прогнозов"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-720",
@@ -2474,16 +2526,17 @@
   {
     "id": "hack-138",
     "title": "Автономный агент микро-улучшений кода Sports Media",
-    "oneLiner": "Автономный агент микро-улучшений кода Sports Media",
+    "oneLiner": "Агент сам находит мелкие проблемы в коде Sports Media и присылает MR с улучшениями.",
     "coverUrl": "",
     "forWhom": [
-      "Разработчики"
+      "Backend-разработчики",
+      "Тимлиды"
     ],
     "whoAffected": [
-      "Техническая команда"
+      "Команда разработки"
     ],
     "whatImproves": [
-      "Процессы разработки"
+      "Качество кодовой базы Sports Media"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-138",
@@ -2498,17 +2551,17 @@
   {
     "id": "hack-256",
     "title": "Slack alert triage agent: dossier, YouTrack draft, MR proposal",
-    "oneLiner": "Slack alert triage agent: dossier, YouTrack draft, MR proposal",
+    "oneLiner": "Slack-алерт → автоматическое досье, черновик задачи в YouTrack и предложение MR.",
     "coverUrl": "",
     "forWhom": [
-      "Продакт-менеджеры",
-      "Тимлиды"
+      "DevOps-инженеры",
+      "Backend-разработчики"
     ],
     "whoAffected": [
-      "Продуктовые команды"
+      "Техническая команда"
     ],
     "whatImproves": [
-      "Управление задачами"
+      "Время реакции на инциденты из Slack"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-256",
@@ -2523,16 +2576,17 @@
   {
     "id": "hack-43",
     "title": "Sports Content Engine — программатический генератор SEO-страниц",
-    "oneLiner": "Sports Content Engine — программатический генератор SEO-страниц",
+    "oneLiner": "Программатический генератор SEO-страниц: шаблоны + данные = тысячи оптимизированных страниц.",
     "coverUrl": "",
     "forWhom": [
-      "SEO-специалисты"
+      "SEO-специалисты",
+      "Backend-разработчики"
     ],
     "whoAffected": [
       "SEO-отдел"
     ],
     "whatImproves": [
-      "SEO-эффективность"
+      "Масштаб производства SEO-контента"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-43",
@@ -2547,17 +2601,17 @@
   {
     "id": "hack-535",
     "title": "Duty-bot для triage HELP-тикетов DevOps",
-    "oneLiner": "Duty-bot для triage HELP-тикетов DevOps",
+    "oneLiner": "Бот-дежурный для DevOps: триажит HELP-тикеты, определяет приоритет и назначает ответственного.",
     "coverUrl": "",
     "forWhom": [
-      "Продакт-менеджеры",
-      "Тимлиды"
+      "DevOps-инженеры",
+      "Саппорт-инженеры"
     ],
     "whoAffected": [
-      "Продуктовые команды"
+      "Техническая команда"
     ],
     "whatImproves": [
-      "Управление задачами"
+      "Скорость обработки DevOps-тикетов"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-535",
@@ -2572,16 +2626,17 @@
   {
     "id": "hack-488",
     "title": "Hackathon Assessor",
-    "oneLiner": "Hackathon Assessor",
+    "oneLiner": "Автоматизированный оценщик хакатонных проектов по формальным критериям и чеклистам.",
     "coverUrl": "",
     "forWhom": [
-      "Команда"
+      "Организаторы хакатона",
+      "Жюри"
     ],
     "whoAffected": [
-      "Компания"
+      "Участники хакатона"
     ],
     "whatImproves": [
-      "Автоматизация процессов"
+      "Объективность и скорость оценки проектов"
     ],
     "fullDescription": "",
     "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-488",
