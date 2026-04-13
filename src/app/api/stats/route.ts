@@ -7,7 +7,10 @@ import {
   setFinalists,
   getFinalists,
   resetUserData,
+  seedFromJson,
 } from "@/lib/db";
+import { Project } from "@/lib/types";
+import projectsSeed from "@/data/projects.json";
 
 export const dynamic = "force-dynamic";
 
@@ -83,6 +86,11 @@ export async function POST(req: NextRequest) {
     await setCurrentRound(1);
     await setFinalists([]);
     return NextResponse.json({ ok: true });
+  }
+
+  if (action === "reseed_projects") {
+    await seedFromJson(projectsSeed as Project[]);
+    return NextResponse.json({ ok: true, count: projectsSeed.length });
   }
 
   if (action === "reset_user") {
