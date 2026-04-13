@@ -1,0 +1,10 @@
+{
+  "name": "HackSwipe",
+  "short_name": "HackSwipe",
+  "description": "Голосование за приз зрительских симпатий хакатона",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050810",
+  "theme_color": "#050810",
+  "icons": []
+}

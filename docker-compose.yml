@@ -1,0 +1,16 @@
+services:
+  hackswipe:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - hackswipe-data:/data
+    environment:
+      - AUTH_SECRET=Kx9mQ7vZ3pL8wR2nJ5tY0uA4sD6fG1hB
+      - ALLOWED_EMAIL_DOMAIN=rantsports.com
+      - ADMIN_EMAILS=r.dunaev@rantsports.com
+      - HACKSWIPE_DB_PATH=/data/hackswipe.db
+
+volumes:
+  hackswipe-data:

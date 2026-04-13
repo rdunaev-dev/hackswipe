@@ -1,0 +1,2596 @@
+[
+  {
+    "id": "hack-81",
+    "title": "RAG-based Task Estimation",
+    "oneLiner": "RAG-based Task Estimation",
+    "coverUrl": "",
+    "forWhom": [
+      "Продакт-менеджеры"
+    ],
+    "whoAffected": [
+      "Продуктовые команды"
+    ],
+    "whatImproves": [
+      "Точность оценок"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-81",
+    "authors": [
+      "P. Kukaev"
+    ],
+    "authorEmails": [
+      "p.kukaev@rantsports.com"
+    ],
+    "epicId": "HACK-81"
+  },
+  {
+    "id": "hack-521",
+    "title": "HRMS на базе Frappe HR: полноценная HR-система для компании",
+    "oneLiner": "HRMS на базе Frappe HR: полноценная HR-система для компании",
+    "coverUrl": "",
+    "forWhom": [
+      "HR"
+    ],
+    "whoAffected": [
+      "Вся компания"
+    ],
+    "whatImproves": [
+      "HR-процессы"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-521",
+    "authors": [
+      "R. Dunaev"
+    ],
+    "authorEmails": [
+      "r.dunaev@rantsports.com"
+    ],
+    "epicId": "HACK-521"
+  },
+  {
+    "id": "hack-123",
+    "title": "Автоматизация создания новостей из Telegram-каналов",
+    "oneLiner": "Автоматизация создания новостей из Telegram-каналов",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Пользователи сервиса"
+    ],
+    "whatImproves": [
+      "Автоматизация уведомлений"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-123",
+    "authors": [
+      "S. Ustinov"
+    ],
+    "authorEmails": [
+      "s.ustinov@rantsports.com"
+    ],
+    "epicId": "HACK-123"
+  },
+  {
+    "id": "hack-278",
+    "title": "Проверка опубликованного контента — отчёт бота по URL и качеству",
+    "oneLiner": "Проверка опубликованного контента — отчёт бота по URL и качеству",
+    "coverUrl": "",
+    "forWhom": [
+      "Аналитики",
+      "Менеджеры"
+    ],
+    "whoAffected": [
+      "Бизнес"
+    ],
+    "whatImproves": [
+      "Аналитика и отчётность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-278",
+    "authors": [
+      "E. Zakharchev"
+    ],
+    "authorEmails": [
+      "e.zakharchev@rantsports.com"
+    ],
+    "epicId": "HACK-278"
+  },
+  {
+    "id": "hack-196",
+    "title": "SEO Site Classifier — классификация сайтов (продукт/инфо) по мета-тегам",
+    "oneLiner": "SEO Site Classifier — классификация сайтов (продукт/инфо) по мета-тегам",
+    "coverUrl": "",
+    "forWhom": [
+      "SEO-специалисты"
+    ],
+    "whoAffected": [
+      "SEO-отдел"
+    ],
+    "whatImproves": [
+      "SEO-эффективность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-196",
+    "authors": [
+      "E. Tyshchuk"
+    ],
+    "authorEmails": [
+      "e.tyshchuk@rantsports.com"
+    ],
+    "epicId": "HACK-196"
+  },
+  {
+    "id": "hack-502",
+    "title": "Автоматизация конкурентного мониторинга SEO (daily snapshots + one-shot report)",
+    "oneLiner": "Автоматизация конкурентного мониторинга SEO (daily snapshots + one-shot report)",
+    "coverUrl": "",
+    "forWhom": [
+      "SEO-специалисты"
+    ],
+    "whoAffected": [
+      "SEO-отдел"
+    ],
+    "whatImproves": [
+      "SEO-эффективность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-502",
+    "authors": [
+      "M. Loban"
+    ],
+    "authorEmails": [
+      "m.loban@rantsports.com"
+    ],
+    "epicId": "HACK-502"
+  },
+  {
+    "id": "hack-78",
+    "title": "MetaRatings.by: алерты публикаций, RSS BY-спортмедиа, генератор подписей + QC эксклюзивов",
+    "oneLiner": "MetaRatings.by: алерты публикаций, RSS BY-спортмедиа, генератор подписей + QC эксклюзивов",
+    "coverUrl": "",
+    "forWhom": [
+      "Редакция",
+      "Контент-менеджеры"
+    ],
+    "whoAffected": [
+      "Контент-команда"
+    ],
+    "whatImproves": [
+      "Скорость создания контента"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-78",
+    "authors": [
+      "I. Adamenko"
+    ],
+    "authorEmails": [
+      "i.adamenko@rantsports.com"
+    ],
+    "epicId": "HACK-78"
+  },
+  {
+    "id": "hack-982",
+    "title": "Telegram-бот: бомбардиры и ассисты после матча",
+    "oneLiner": "Telegram-бот: бомбардиры и ассисты после матча",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Пользователи сервиса"
+    ],
+    "whatImproves": [
+      "Автоматизация уведомлений"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-982",
+    "authors": [
+      "A. Miroshnichenko"
+    ],
+    "authorEmails": [
+      "a.miroshnichenko@rantsports.com"
+    ],
+    "epicId": "HACK-982"
+  },
+  {
+    "id": "hack-452",
+    "title": "IdeaHub — захват идей из Slack/Cursor, дедуп и витрина (SFE MVP)",
+    "oneLiner": "IdeaHub — захват идей из Slack/Cursor, дедуп и витрина (SFE MVP)",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Компания"
+    ],
+    "whatImproves": [
+      "Автоматизация процессов"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-452",
+    "authors": [
+      "A. Tsarev"
+    ],
+    "authorEmails": [
+      "a.tsarev@rantsports.com"
+    ],
+    "epicId": "HACK-452"
+  },
+  {
+    "id": "hack-592",
+    "title": "Музей памяти Metaratings — корпоративный медиа-архив",
+    "oneLiner": "Музей памяти Metaratings — корпоративный медиа-архив",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Компания"
+    ],
+    "whatImproves": [
+      "Автоматизация процессов"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-592",
+    "authors": [
+      "O. Panasyuk"
+    ],
+    "authorEmails": [
+      "o.panasyuk@rantsports.com"
+    ],
+    "epicId": "HACK-592"
+  },
+  {
+    "id": "hack-249",
+    "title": "AI Toolbox — собранный контекст и toolset для Laravel/GraphQL в SFE",
+    "oneLiner": "AI Toolbox — собранный контекст и toolset для Laravel/GraphQL в SFE",
+    "coverUrl": "",
+    "forWhom": [
+      "Редакция",
+      "Контент-менеджеры"
+    ],
+    "whoAffected": [
+      "Контент-команда"
+    ],
+    "whatImproves": [
+      "Скорость создания контента"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-249",
+    "authors": [
+      "A. Tsarev"
+    ],
+    "authorEmails": [
+      "a.tsarev@rantsports.com"
+    ],
+    "epicId": "HACK-249"
+  },
+  {
+    "id": "hack-438",
+    "title": "Система рейтингов БК: методология, мини-сервис, симуляция, скиллы Cursor",
+    "oneLiner": "Система рейтингов БК: методология, мини-сервис, симуляция, скиллы Cursor",
+    "coverUrl": "",
+    "forWhom": [
+      "Монетизация"
+    ],
+    "whoAffected": [
+      "Бизнес",
+      "Пользователи"
+    ],
+    "whatImproves": [
+      "Монетизация и конверсия"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-438",
+    "authors": [
+      "M. Kravchenko"
+    ],
+    "authorEmails": [
+      "m.kravchenko@rantsports.com"
+    ],
+    "epicId": "HACK-438"
+  },
+  {
+    "id": "hack-57",
+    "title": "Среда создания ИИ-сотрудников + AI Project Manager",
+    "oneLiner": "Среда создания ИИ-сотрудников + AI Project Manager",
+    "coverUrl": "",
+    "forWhom": [
+      "HR"
+    ],
+    "whoAffected": [
+      "Вся компания"
+    ],
+    "whatImproves": [
+      "HR-процессы"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-57",
+    "authors": [
+      "A. Parshin"
+    ],
+    "authorEmails": [
+      "a.parshin@rantsports.com"
+    ],
+    "epicId": "HACK-57"
+  },
+  {
+    "id": "hack-857",
+    "title": "TWLF.ai — 12-й Игрок: AI-компаньон для футбольных болельщиков",
+    "oneLiner": "TWLF.ai — 12-й Игрок: AI-компаньон для футбольных болельщиков",
+    "coverUrl": "",
+    "forWhom": [
+      "Пользователи",
+      "Фанаты"
+    ],
+    "whoAffected": [
+      "Аудитория сайта"
+    ],
+    "whatImproves": [
+      "Вовлечённость аудитории"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-857",
+    "authors": [
+      "A. Andryushin"
+    ],
+    "authorEmails": [
+      "a.andryushin@rantsports.com"
+    ],
+    "epicId": "HACK-857"
+  },
+  {
+    "id": "hack-152",
+    "title": "Pipeline Failure Collector",
+    "oneLiner": "Pipeline Failure Collector",
+    "coverUrl": "",
+    "forWhom": [
+      "DevOps",
+      "Разработчики"
+    ],
+    "whoAffected": [
+      "Техническая команда"
+    ],
+    "whatImproves": [
+      "Инфраструктура"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-152",
+    "authors": [
+      "R. Nikolaev"
+    ],
+    "authorEmails": [
+      "r.nikolaev@rantsports.com"
+    ],
+    "epicId": "HACK-152"
+  },
+  {
+    "id": "hack-382",
+    "title": "Агент автоматических ответов вебмастерам (линкбилдинг)",
+    "oneLiner": "Агент автоматических ответов вебмастерам (линкбилдинг)",
+    "coverUrl": "",
+    "forWhom": [
+      "SEO-специалисты"
+    ],
+    "whoAffected": [
+      "SEO-отдел"
+    ],
+    "whatImproves": [
+      "SEO-эффективность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-382",
+    "authors": [
+      "O. Tsebulevsky"
+    ],
+    "authorEmails": [
+      "o.tsebulevsky@rantsports.com"
+    ],
+    "epicId": "HACK-382"
+  },
+  {
+    "id": "hack-975",
+    "title": "Metaratings Sponsor Project Builder — конструктор бриф → draft КП",
+    "oneLiner": "Metaratings Sponsor Project Builder — конструктор бриф → draft КП",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Компания"
+    ],
+    "whatImproves": [
+      "Автоматизация процессов"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-975",
+    "authors": [
+      "E. Kim"
+    ],
+    "authorEmails": [
+      "e.kim@rantsports.com"
+    ],
+    "epicId": "HACK-975"
+  },
+  {
+    "id": "hack-130",
+    "title": "Domain Agent — автоматизация управления доменами Metaratings",
+    "oneLiner": "Domain Agent — автоматизация управления доменами Metaratings",
+    "coverUrl": "",
+    "forWhom": [
+      "SEO-специалисты"
+    ],
+    "whoAffected": [
+      "SEO-отдел"
+    ],
+    "whatImproves": [
+      "Управление доменами"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-130",
+    "authors": [
+      "A. Lachugin"
+    ],
+    "authorEmails": [
+      "a.lachugin@rantsports.com"
+    ],
+    "epicId": "HACK-130"
+  },
+  {
+    "id": "hack-167",
+    "title": "Backlog Groomer — помощник PM/PDM по актуализации бэклога",
+    "oneLiner": "Backlog Groomer — помощник PM/PDM по актуализации бэклога",
+    "coverUrl": "",
+    "forWhom": [
+      "Продакт-менеджеры",
+      "Тимлиды"
+    ],
+    "whoAffected": [
+      "Продуктовые команды"
+    ],
+    "whatImproves": [
+      "Управление задачами"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-167",
+    "authors": [
+      "O. Volostrigov"
+    ],
+    "authorEmails": [
+      "o.volostrigov@rantsports.com"
+    ],
+    "epicId": "HACK-167"
+  },
+  {
+    "id": "hack-206",
+    "title": "FS Monitor: Seometrics vs браузер, сводный отчёт и YT handoff",
+    "oneLiner": "FS Monitor: Seometrics vs браузер, сводный отчёт и YT handoff",
+    "coverUrl": "",
+    "forWhom": [
+      "SEO-специалисты"
+    ],
+    "whoAffected": [
+      "SEO-отдел"
+    ],
+    "whatImproves": [
+      "SEO-эффективность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-206",
+    "authors": [
+      "D. Ermoshkin"
+    ],
+    "authorEmails": [
+      "d.ermoshkin@rantsports.com"
+    ],
+    "epicId": "HACK-206"
+  },
+  {
+    "id": "hack-606",
+    "title": "Сервис расчёта отыгрыша бонуса: демо UI, GitLab Pages, сдача (ступени 3–4)",
+    "oneLiner": "Сервис расчёта отыгрыша бонуса: демо UI, GitLab Pages, сдача (ступени 3–4)",
+    "coverUrl": "",
+    "forWhom": [
+      "Разработчики"
+    ],
+    "whoAffected": [
+      "Техническая команда"
+    ],
+    "whatImproves": [
+      "Процессы разработки"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-606",
+    "authors": [
+      "A. Dudkina"
+    ],
+    "authorEmails": [
+      "a.dudkina@rantsports.com"
+    ],
+    "epicId": "HACK-606"
+  },
+  {
+    "id": "hack-690",
+    "title": "Интерактивный дашборд «Дерево метрик»",
+    "oneLiner": "Интерактивный дашборд «Дерево метрик»",
+    "coverUrl": "",
+    "forWhom": [
+      "Аналитики",
+      "Менеджеры"
+    ],
+    "whoAffected": [
+      "Бизнес"
+    ],
+    "whatImproves": [
+      "Аналитика и отчётность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-690",
+    "authors": [
+      "V. Azzheurov"
+    ],
+    "authorEmails": [
+      "v.azzheurov@rantsports.com"
+    ],
+    "epicId": "HACK-690"
+  },
+  {
+    "id": "hack-406",
+    "title": "Еженедельный HR-отчёт: Huntflow, Calendar, YouTrack → Markdown",
+    "oneLiner": "Еженедельный HR-отчёт: Huntflow, Calendar, YouTrack → Markdown",
+    "coverUrl": "",
+    "forWhom": [
+      "HR"
+    ],
+    "whoAffected": [
+      "Вся компания"
+    ],
+    "whatImproves": [
+      "HR-процессы"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-406",
+    "authors": [
+      "E. Meshcherikova"
+    ],
+    "authorEmails": [
+      "e.meshcherikova@rantsports.com"
+    ],
+    "epicId": "HACK-406"
+  },
+  {
+    "id": "hack-390",
+    "title": "SEO Knowledge Base — синхронизация YouTrack ↔ Git",
+    "oneLiner": "SEO Knowledge Base — синхронизация YouTrack ↔ Git",
+    "coverUrl": "",
+    "forWhom": [
+      "SEO-специалисты"
+    ],
+    "whoAffected": [
+      "SEO-отдел"
+    ],
+    "whatImproves": [
+      "SEO-эффективность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-390",
+    "authors": [
+      "N. Scheglov"
+    ],
+    "authorEmails": [
+      "n.scheglov@rantsports.com"
+    ],
+    "epicId": "HACK-390"
+  },
+  {
+    "id": "hack-740",
+    "title": "Автоматизация скриншотов для отчётности букмекерам (RU)",
+    "oneLiner": "Автоматизация скриншотов для отчётности букмекерам (RU)",
+    "coverUrl": "",
+    "forWhom": [
+      "Аналитики",
+      "Менеджеры"
+    ],
+    "whoAffected": [
+      "Бизнес"
+    ],
+    "whatImproves": [
+      "Аналитика и отчётность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-740",
+    "authors": [
+      "E. Chechin"
+    ],
+    "authorEmails": [
+      "e.chechin@rantsports.com"
+    ],
+    "epicId": "HACK-740"
+  },
+  {
+    "id": "hack-964",
+    "title": "Пайплайн ИИ-текстов для Cybersport и публикация в Sports Media Admin API",
+    "oneLiner": "Пайплайн ИИ-текстов для Cybersport и публикация в Sports Media Admin API",
+    "coverUrl": "",
+    "forWhom": [
+      "Редакция",
+      "Контент-менеджеры"
+    ],
+    "whoAffected": [
+      "Контент-команда"
+    ],
+    "whatImproves": [
+      "Скорость создания контента"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-964",
+    "authors": [
+      "R. Sadykov"
+    ],
+    "authorEmails": [
+      "r.sadykov@rantsports.com"
+    ],
+    "epicId": "HACK-964"
+  },
+  {
+    "id": "hack-481",
+    "title": "Витрина персональных офферов БК: виджет, ЛК, моки",
+    "oneLiner": "Витрина персональных офферов БК: виджет, ЛК, моки",
+    "coverUrl": "",
+    "forWhom": [
+      "Монетизация"
+    ],
+    "whoAffected": [
+      "Бизнес",
+      "Пользователи"
+    ],
+    "whatImproves": [
+      "Монетизация и конверсия"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-481",
+    "authors": [
+      "E. Khayretdinov"
+    ],
+    "authorEmails": [
+      "e.khayretdinov@rantsports.com"
+    ],
+    "epicId": "HACK-481"
+  },
+  {
+    "id": "hack-613",
+    "title": "Бонус-чат: скилл анализа CSV (ст. 2) + Slack-алерты в облаке (ст. 4)",
+    "oneLiner": "Бонус-чат: скилл анализа CSV (ст. 2) + Slack-алерты в облаке (ст. 4)",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Пользователи сервиса"
+    ],
+    "whatImproves": [
+      "Автоматизация уведомлений"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-613",
+    "authors": [
+      "L. Strelnik"
+    ],
+    "authorEmails": [
+      "l.strelnik@rantsports.com"
+    ],
+    "epicId": "HACK-613"
+  },
+  {
+    "id": "hack-792",
+    "title": "PR-разбор готовой спортивной новости: тематика, лиды, каналы",
+    "oneLiner": "PR-разбор готовой спортивной новости: тематика, лиды, каналы",
+    "coverUrl": "",
+    "forWhom": [
+      "Редакция",
+      "Контент-менеджеры"
+    ],
+    "whoAffected": [
+      "Контент-команда"
+    ],
+    "whatImproves": [
+      "Скорость создания контента"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-792",
+    "authors": [
+      "S. Huseynzade"
+    ],
+    "authorEmails": [
+      "s.huseynzade@rantsports.com"
+    ],
+    "epicId": "HACK-792"
+  },
+  {
+    "id": "hack-474",
+    "title": "SEO-видео: сценарий из статьи для сайтов Меты (MVP)",
+    "oneLiner": "SEO-видео: сценарий из статьи для сайтов Меты (MVP)",
+    "coverUrl": "",
+    "forWhom": [
+      "SEO-специалисты"
+    ],
+    "whoAffected": [
+      "SEO-отдел"
+    ],
+    "whatImproves": [
+      "SEO-эффективность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-474",
+    "authors": [
+      "D. Baghdasarov"
+    ],
+    "authorEmails": [
+      "david.baghdasarov@rantsports.com"
+    ],
+    "epicId": "HACK-474"
+  },
+  {
+    "id": "hack-934",
+    "title": "Шаблон прогнозов MetaRatings: MD по команде, коэффициенты, папка «Шаблоны ИИ»",
+    "oneLiner": "Шаблон прогнозов MetaRatings: MD по команде, коэффициенты, папка «Шаблоны ИИ»",
+    "coverUrl": "",
+    "forWhom": [
+      "Редакция",
+      "Контент-менеджеры"
+    ],
+    "whoAffected": [
+      "Контент-команда"
+    ],
+    "whatImproves": [
+      "Скорость создания контента"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-934",
+    "authors": [
+      "A. Kapustin"
+    ],
+    "authorEmails": [
+      "a.kapustin@rantsports.com"
+    ],
+    "epicId": "HACK-934"
+  },
+  {
+    "id": "hack-145",
+    "title": "MR Analyzer",
+    "oneLiner": "MR Analyzer",
+    "coverUrl": "",
+    "forWhom": [
+      "Разработчики"
+    ],
+    "whoAffected": [
+      "Техническая команда"
+    ],
+    "whatImproves": [
+      "Процессы разработки"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-145",
+    "authors": [
+      "I. Serpukhov"
+    ],
+    "authorEmails": [
+      "i.serpukhov@rantsports.com"
+    ],
+    "epicId": "HACK-145"
+  },
+  {
+    "id": "hack-242",
+    "title": "Pochtalyon: дайджест и напоминания (Slack, почта, YT, календарь)",
+    "oneLiner": "Pochtalyon: дайджест и напоминания (Slack, почта, YT, календарь)",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Компания"
+    ],
+    "whatImproves": [
+      "Автоматизация процессов"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-242",
+    "authors": [
+      "A. Tarasova"
+    ],
+    "authorEmails": [
+      "a.tarasova@rantsports.com"
+    ],
+    "epicId": "HACK-242"
+  },
+  {
+    "id": "hack-50",
+    "title": "Топ-10 — мини-игра «угадай топ» для фанатов",
+    "oneLiner": "Топ-10 — мини-игра «угадай топ» для фанатов",
+    "coverUrl": "",
+    "forWhom": [
+      "Пользователи",
+      "Фанаты"
+    ],
+    "whoAffected": [
+      "Аудитория сайта"
+    ],
+    "whatImproves": [
+      "Вовлечённость аудитории"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-50",
+    "authors": [
+      "S. Avanesyan"
+    ],
+    "authorEmails": [
+      "s.avanesyan@rantsports.com"
+    ],
+    "epicId": "HACK-50"
+  },
+  {
+    "id": "hack-181",
+    "title": "YouTrack баги → анализ частоты → Allure TestOps (покрытие/регресс) → тест-кейсы + отчёт в Slack",
+    "oneLiner": "YouTrack баги → анализ частоты → Allure TestOps (покрытие/регресс) → тест-кейсы + отчёт в Slack",
+    "coverUrl": "",
+    "forWhom": [
+      "QA-инженеры"
+    ],
+    "whoAffected": [
+      "Разработка",
+      "QA"
+    ],
+    "whatImproves": [
+      "Качество тестирования"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-181",
+    "authors": [
+      "V. Kostarev"
+    ],
+    "authorEmails": [
+      "v.kostarev@rantsports.com"
+    ],
+    "epicId": "HACK-181"
+  },
+  {
+    "id": "hack-614",
+    "title": "Отпуск: остаток, использовано, периоды (планы и прошлое), полная сводка — скилл Cursor под один источник",
+    "oneLiner": "Отпуск: остаток, использовано, периоды (планы и прошлое), полная сводка — скилл Cursor под один источник",
+    "coverUrl": "",
+    "forWhom": [
+      "HR"
+    ],
+    "whoAffected": [
+      "Вся компания"
+    ],
+    "whatImproves": [
+      "HR-процессы"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-614",
+    "authors": [
+      "A. Burundukov"
+    ],
+    "authorEmails": [
+      "a.burundukov@rantsports.com"
+    ],
+    "epicId": "HACK-614"
+  },
+  {
+    "id": "hack-754",
+    "title": "Bots Audit Tool — анализ бот-логов и приоритизированный бэклог",
+    "oneLiner": "Bots Audit Tool — анализ бот-логов и приоритизированный бэклог",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Пользователи сервиса"
+    ],
+    "whatImproves": [
+      "Автоматизация уведомлений"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-754",
+    "authors": [
+      "A. Mikhailova"
+    ],
+    "authorEmails": [
+      "a.mikhailova@rantsports.com"
+    ],
+    "epicId": "HACK-754"
+  },
+  {
+    "id": "hack-271",
+    "title": "Автогенерация изображений для событийного контента",
+    "oneLiner": "Автогенерация изображений для событийного контента",
+    "coverUrl": "",
+    "forWhom": [
+      "Редакция",
+      "Контент-менеджеры"
+    ],
+    "whoAffected": [
+      "Контент-команда"
+    ],
+    "whatImproves": [
+      "Скорость создания контента"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-271",
+    "authors": [
+      "A. Aspidov"
+    ],
+    "authorEmails": [
+      "a.aspidov@rantsports.com"
+    ],
+    "epicId": "HACK-271"
+  },
+  {
+    "id": "hack-846",
+    "title": "Школа беттинга Metaratings — геймифицированная образовательная платформа",
+    "oneLiner": "Школа беттинга Metaratings — геймифицированная образовательная платформа",
+    "coverUrl": "",
+    "forWhom": [
+      "Монетизация"
+    ],
+    "whoAffected": [
+      "Бизнес",
+      "Пользователи"
+    ],
+    "whatImproves": [
+      "Монетизация и конверсия"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-846",
+    "authors": [
+      "E. Morozov"
+    ],
+    "authorEmails": [
+      "e.morozov@rantsports.com"
+    ],
+    "epicId": "HACK-846"
+  },
+  {
+    "id": "hack-459",
+    "title": "Траст-метр: сервис проверки доменов букмекеров и казино — хакатон",
+    "oneLiner": "Траст-метр: сервис проверки доменов букмекеров и казино — хакатон",
+    "coverUrl": "",
+    "forWhom": [
+      "Монетизация"
+    ],
+    "whoAffected": [
+      "Бизнес",
+      "Пользователи"
+    ],
+    "whatImproves": [
+      "Монетизация и конверсия"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-459",
+    "authors": [
+      "A. Barladyan"
+    ],
+    "authorEmails": [
+      "a.barladyan@rantsports.com"
+    ],
+    "epicId": "HACK-459"
+  },
+  {
+    "id": "hack-526",
+    "title": "Автоматический post-release мониторинг метрик ключевых страниц",
+    "oneLiner": "Автоматический post-release мониторинг метрик ключевых страниц",
+    "coverUrl": "",
+    "forWhom": [
+      "Аналитики",
+      "Менеджеры"
+    ],
+    "whoAffected": [
+      "Бизнес"
+    ],
+    "whatImproves": [
+      "Аналитика и отчётность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-526",
+    "authors": [
+      "G. Bagdasaryan"
+    ],
+    "authorEmails": [
+      "g.bagdasaryan@rantsports.com"
+    ],
+    "epicId": "HACK-526"
+  },
+  {
+    "id": "hack-15",
+    "title": "MCP-сервис и API endpoints для управления материалами Sports Media",
+    "oneLiner": "MCP-сервис и API endpoints для управления материалами Sports Media",
+    "coverUrl": "",
+    "forWhom": [
+      "Разработчики"
+    ],
+    "whoAffected": [
+      "Техническая команда"
+    ],
+    "whatImproves": [
+      "Процессы разработки"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-15",
+    "authors": [
+      "M. Atabaev"
+    ],
+    "authorEmails": [
+      "m.atabaev@rantsports.com"
+    ],
+    "epicId": "HACK-15"
+  },
+  {
+    "id": "hack-8",
+    "title": "Автономный агент авто-фикса багов по логам",
+    "oneLiner": "Автономный агент авто-фикса багов по логам",
+    "coverUrl": "",
+    "forWhom": [
+      "DevOps",
+      "Разработчики"
+    ],
+    "whoAffected": [
+      "Техническая команда"
+    ],
+    "whatImproves": [
+      "Инфраструктура"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-8",
+    "authors": [
+      "M. Atabaev"
+    ],
+    "authorEmails": [
+      "m.atabaev@rantsports.com"
+    ],
+    "epicId": "HACK-8"
+  },
+  {
+    "id": "hack-109",
+    "title": "Помощник по почте конкурсов и таблицам",
+    "oneLiner": "Помощник по почте конкурсов и таблицам",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Компания"
+    ],
+    "whatImproves": [
+      "Автоматизация процессов"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-109",
+    "authors": [
+      "V. Gruzdev"
+    ],
+    "authorEmails": [
+      "v.gruzdev@rantsports.com"
+    ],
+    "epicId": "HACK-109"
+  },
+  {
+    "id": "hack-747",
+    "title": "Dispatch Agent — персональный AI для рабочего контекста",
+    "oneLiner": "Dispatch Agent — персональный AI для рабочего контекста",
+    "coverUrl": "",
+    "forWhom": [
+      "Редакция",
+      "Контент-менеджеры"
+    ],
+    "whoAffected": [
+      "Контент-команда"
+    ],
+    "whatImproves": [
+      "Скорость создания контента"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-747",
+    "authors": [
+      "V. Mekhontsev"
+    ],
+    "authorEmails": [
+      "v.mekhontsev@rantsports.com"
+    ],
+    "epicId": "HACK-747"
+  },
+  {
+    "id": "hack-801",
+    "title": "WoWScore (WinScore Vite Edition) — React + Capacitor + WinScore API",
+    "oneLiner": "WoWScore (WinScore Vite Edition) — React + Capacitor + WinScore API",
+    "coverUrl": "",
+    "forWhom": [
+      "Разработчики"
+    ],
+    "whoAffected": [
+      "Техническая команда"
+    ],
+    "whatImproves": [
+      "Процессы разработки"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-801",
+    "authors": [
+      "M. Drozdov"
+    ],
+    "authorEmails": [
+      "m.drozdov@rantsports.com"
+    ],
+    "epicId": "HACK-801"
+  },
+  {
+    "id": "hack-1",
+    "title": "AI Associate Template – шаблон разворачивания автономного агента в AWS",
+    "oneLiner": "AI Associate Template – шаблон разворачивания автономного агента в AWS",
+    "coverUrl": "",
+    "forWhom": [
+      "DevOps",
+      "Разработчики"
+    ],
+    "whoAffected": [
+      "Техническая команда"
+    ],
+    "whatImproves": [
+      "Инфраструктура"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-1",
+    "authors": [
+      "N. Kritsiuk"
+    ],
+    "authorEmails": [
+      "n.kritsiuk@rantsports.com"
+    ],
+    "epicId": "HACK-1"
+  },
+  {
+    "id": "hack-656",
+    "title": "Тренд-чекер: сбор инфоповодов, сферы, хайпометр, дайджест в Telegram",
+    "oneLiner": "Тренд-чекер: сбор инфоповодов, сферы, хайпометр, дайджест в Telegram",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Пользователи сервиса"
+    ],
+    "whatImproves": [
+      "Автоматизация уведомлений"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-656",
+    "authors": [
+      "I. Panasyuk"
+    ],
+    "authorEmails": [
+      "i.panasyuk@rantsports.com"
+    ],
+    "epicId": "HACK-656"
+  },
+  {
+    "id": "hack-941",
+    "title": "CyberMeta Streamline: календарь релизов",
+    "oneLiner": "CyberMeta Streamline: календарь релизов",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Компания"
+    ],
+    "whatImproves": [
+      "Автоматизация процессов"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-941",
+    "authors": [
+      "I. Panasyuk"
+    ],
+    "authorEmails": [
+      "i.panasyuk@rantsports.com"
+    ],
+    "epicId": "HACK-941"
+  },
+  {
+    "id": "hack-808",
+    "title": "Автономная AI-среда и Linear (оркестрация процессов)",
+    "oneLiner": "Автономная AI-среда и Linear (оркестрация процессов)",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Компания"
+    ],
+    "whatImproves": [
+      "Автоматизация процессов"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-808",
+    "authors": [
+      "M. Drozdov"
+    ],
+    "authorEmails": [
+      "m.drozdov@rantsports.com"
+    ],
+    "epicId": "HACK-808"
+  },
+  {
+    "id": "hack-102",
+    "title": "AI QA Workflow Assistant для контентного QA в Sports Media",
+    "oneLiner": "AI QA Workflow Assistant для контентного QA в Sports Media",
+    "coverUrl": "",
+    "forWhom": [
+      "QA-инженеры"
+    ],
+    "whoAffected": [
+      "Разработка",
+      "QA"
+    ],
+    "whatImproves": [
+      "Качество тестирования"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-102",
+    "authors": [
+      "S. Andreev"
+    ],
+    "authorEmails": [
+      "s.andreev@rantsports.com"
+    ],
+    "epicId": "HACK-102"
+  },
+  {
+    "id": "hack-467",
+    "title": "SEO Health Monitor",
+    "oneLiner": "SEO Health Monitor",
+    "coverUrl": "",
+    "forWhom": [
+      "SEO-специалисты"
+    ],
+    "whoAffected": [
+      "SEO-отдел"
+    ],
+    "whatImproves": [
+      "SEO-эффективность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-467",
+    "authors": [
+      "L. Ayupova"
+    ],
+    "authorEmails": [
+      "l.ayupova@rantsports.com"
+    ],
+    "epicId": "HACK-467"
+  },
+  {
+    "id": "hack-383",
+    "title": "Agent swarm for expiring AI usage: docs hygiene + ANL research acceleration",
+    "oneLiner": "Agent swarm for expiring AI usage: docs hygiene + ANL research acceleration",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Компания"
+    ],
+    "whatImproves": [
+      "Автоматизация процессов"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-383",
+    "authors": [
+      "R. Avanesov"
+    ],
+    "authorEmails": [
+      "r.avanesov@rantsports.com"
+    ],
+    "epicId": "HACK-383"
+  },
+  {
+    "id": "hack-174",
+    "title": "PBN: линк-чекер сети (uptime и ссылки)",
+    "oneLiner": "PBN: линк-чекер сети (uptime и ссылки)",
+    "coverUrl": "",
+    "forWhom": [
+      "SEO-специалисты"
+    ],
+    "whoAffected": [
+      "SEO-отдел"
+    ],
+    "whatImproves": [
+      "SEO-эффективность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-174",
+    "authors": [
+      "S. Kokornov"
+    ],
+    "authorEmails": [
+      "s.kokornov@rantsports.com"
+    ],
+    "epicId": "HACK-174"
+  },
+  {
+    "id": "hack-949",
+    "title": "Агрегатор актуальных новостей СМИ Казахстана",
+    "oneLiner": "Агрегатор актуальных новостей СМИ Казахстана",
+    "coverUrl": "",
+    "forWhom": [
+      "Редакция",
+      "Контент-менеджеры"
+    ],
+    "whoAffected": [
+      "Контент-команда"
+    ],
+    "whatImproves": [
+      "Скорость создания контента"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-949",
+    "authors": [
+      "D. Kadyrov"
+    ],
+    "authorEmails": [
+      "d.kadyrov@rantsports.com"
+    ],
+    "epicId": "HACK-949"
+  },
+  {
+    "id": "hack-956",
+    "title": "Telegram-бот: расшифровка аудио/видео (Gemini)",
+    "oneLiner": "Telegram-бот: расшифровка аудио/видео (Gemini)",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Пользователи сервиса"
+    ],
+    "whatImproves": [
+      "Автоматизация уведомлений"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-956",
+    "authors": [
+      "I. Karsaulidze"
+    ],
+    "authorEmails": [
+      "i.karsaulidze@rantsports.com"
+    ],
+    "epicId": "HACK-956"
+  },
+  {
+    "id": "hack-642",
+    "title": "Palpite: вычитка черновиков в Google Docs (Cursor)",
+    "oneLiner": "Palpite: вычитка черновиков в Google Docs (Cursor)",
+    "coverUrl": "",
+    "forWhom": [
+      "Редакция",
+      "Контент-менеджеры"
+    ],
+    "whoAffected": [
+      "Контент-команда"
+    ],
+    "whatImproves": [
+      "Скорость создания контента"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-642",
+    "authors": [
+      "A. Aspidova"
+    ],
+    "authorEmails": [
+      "anastasia.aspidova@rantsports.com"
+    ],
+    "epicId": "HACK-642"
+  },
+  {
+    "id": "hack-514",
+    "title": "Автодеплой env на dev-стенд из Deploy Notes",
+    "oneLiner": "Автодеплой env на dev-стенд из Deploy Notes",
+    "coverUrl": "",
+    "forWhom": [
+      "DevOps",
+      "Разработчики"
+    ],
+    "whoAffected": [
+      "Техническая команда"
+    ],
+    "whatImproves": [
+      "Инфраструктура"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-514",
+    "authors": [
+      "D. Miziak"
+    ],
+    "authorEmails": [
+      "d.miziak@rantsports.com"
+    ],
+    "epicId": "HACK-514"
+  },
+  {
+    "id": "hack-675",
+    "title": "Автогенерация прогнозов киберспорта по SEO-шаблону и ИИ",
+    "oneLiner": "Автогенерация прогнозов киберспорта по SEO-шаблону и ИИ",
+    "coverUrl": "",
+    "forWhom": [
+      "SEO-специалисты"
+    ],
+    "whoAffected": [
+      "SEO-отдел"
+    ],
+    "whatImproves": [
+      "SEO-эффективность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-675",
+    "authors": [
+      "Y. Poddubny"
+    ],
+    "authorEmails": [
+      "y.poddubny@rantsports.com"
+    ],
+    "epicId": "HACK-675"
+  },
+  {
+    "id": "hack-861",
+    "title": "Оркестр доменных агентов для префлайта задач перед PBR",
+    "oneLiner": "Оркестр доменных агентов для префлайта задач перед PBR",
+    "coverUrl": "",
+    "forWhom": [
+      "Продакт-менеджеры",
+      "Тимлиды"
+    ],
+    "whoAffected": [
+      "Продуктовые команды"
+    ],
+    "whatImproves": [
+      "Управление задачами"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-861",
+    "authors": [
+      "R. Nikolaev"
+    ],
+    "authorEmails": [
+      "r.nikolaev@rantsports.com"
+    ],
+    "epicId": "HACK-861"
+  },
+  {
+    "id": "hack-58",
+    "title": "Предупреждения при назначении и спринте с учётом отпусков (Google Calendar)",
+    "oneLiner": "Предупреждения при назначении и спринте с учётом отпусков (Google Calendar)",
+    "coverUrl": "",
+    "forWhom": [
+      "HR"
+    ],
+    "whoAffected": [
+      "Вся компания"
+    ],
+    "whatImproves": [
+      "HR-процессы"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-58",
+    "authors": [
+      "T. Gevorgyan"
+    ],
+    "authorEmails": [
+      "t.gevorgyan@rantsports.com"
+    ],
+    "epicId": "HACK-58"
+  },
+  {
+    "id": "hack-220",
+    "title": "Телеграм-бот: грамматика и стиль новостей Metaratings",
+    "oneLiner": "Телеграм-бот: грамматика и стиль новостей Metaratings",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Пользователи сервиса"
+    ],
+    "whatImproves": [
+      "Автоматизация уведомлений"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-220",
+    "authors": [
+      "D. Kharchenko"
+    ],
+    "authorEmails": [
+      "d.kharchenko@rantsports.com"
+    ],
+    "epicId": "HACK-220"
+  },
+  {
+    "id": "hack-227",
+    "title": "Мониторинг актуальности бонусов Metaratings.tj",
+    "oneLiner": "Мониторинг актуальности бонусов Metaratings.tj",
+    "coverUrl": "",
+    "forWhom": [
+      "Аналитики",
+      "Менеджеры"
+    ],
+    "whoAffected": [
+      "Бизнес"
+    ],
+    "whatImproves": [
+      "Аналитика и отчётность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-227",
+    "authors": [
+      "M. Zvyagintsev"
+    ],
+    "authorEmails": [
+      "m.zvyagintsev@rantsports.com"
+    ],
+    "epicId": "HACK-227"
+  },
+  {
+    "id": "hack-874",
+    "title": "Brazuca AI-Editor — pt-BR прогнозы из статистики",
+    "oneLiner": "Brazuca AI-Editor — pt-BR прогнозы из статистики",
+    "coverUrl": "",
+    "forWhom": [
+      "Редакция",
+      "Контент-менеджеры"
+    ],
+    "whoAffected": [
+      "Контент-команда"
+    ],
+    "whatImproves": [
+      "Скорость создания контента"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-874",
+    "authors": [
+      "Y. Yakovleva"
+    ],
+    "authorEmails": [
+      "y.yakovleva@rantsports.com"
+    ],
+    "epicId": "HACK-874"
+  },
+  {
+    "id": "hack-921",
+    "title": "Ставочные новости — адаптация черновика под эксклюзивный формат в Cursor",
+    "oneLiner": "Ставочные новости — адаптация черновика под эксклюзивный формат в Cursor",
+    "coverUrl": "",
+    "forWhom": [
+      "Редакция",
+      "Контент-менеджеры"
+    ],
+    "whoAffected": [
+      "Контент-команда"
+    ],
+    "whatImproves": [
+      "Скорость создания контента"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-921",
+    "authors": [
+      "S. Goncharov"
+    ],
+    "authorEmails": [
+      "s.goncharov@rantsports.com"
+    ],
+    "epicId": "HACK-921"
+  },
+  {
+    "id": "hack-838",
+    "title": "Telegram-бот: H1 и URL для редакторов",
+    "oneLiner": "Telegram-бот: H1 и URL для редакторов",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Пользователи сервиса"
+    ],
+    "whatImproves": [
+      "Автоматизация уведомлений"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-838",
+    "authors": [
+      "D. Sadriev"
+    ],
+    "authorEmails": [
+      "d.sadriev@rantsports.com"
+    ],
+    "epicId": "HACK-838"
+  },
+  {
+    "id": "hack-555",
+    "title": "Автоматизация ежемесячной отчетности по рекламным креативам Metaratings",
+    "oneLiner": "Автоматизация ежемесячной отчетности по рекламным креативам Metaratings",
+    "coverUrl": "",
+    "forWhom": [
+      "Аналитики",
+      "Менеджеры"
+    ],
+    "whoAffected": [
+      "Бизнес"
+    ],
+    "whatImproves": [
+      "Аналитика и отчётность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-555",
+    "authors": [
+      "N. Bondarenko"
+    ],
+    "authorEmails": [
+      "n.bondarenko@rantsports.com"
+    ],
+    "epicId": "HACK-555"
+  },
+  {
+    "id": "hack-909",
+    "title": "ИИ-автор черновиков КиберМеты",
+    "oneLiner": "ИИ-автор черновиков КиберМеты",
+    "coverUrl": "",
+    "forWhom": [
+      "Редакция",
+      "Контент-менеджеры"
+    ],
+    "whoAffected": [
+      "Контент-команда"
+    ],
+    "whatImproves": [
+      "Скорость создания контента"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-909",
+    "authors": [
+      "R. Sadykov"
+    ],
+    "authorEmails": [
+      "r.sadykov@rantsports.com"
+    ],
+    "epicId": "HACK-909"
+  },
+  {
+    "id": "hack-264",
+    "title": "QA Watcher Agent — автоанализ задач и проверка по плану",
+    "oneLiner": "QA Watcher Agent — автоанализ задач и проверка по плану",
+    "coverUrl": "",
+    "forWhom": [
+      "QA-инженеры"
+    ],
+    "whoAffected": [
+      "Разработка",
+      "QA"
+    ],
+    "whatImproves": [
+      "Качество тестирования"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-264",
+    "authors": [
+      "D. Bryantsev"
+    ],
+    "authorEmails": [
+      "d.bryantsev@rantsports.com"
+    ],
+    "epicId": "HACK-264"
+  },
+  {
+    "id": "hack-559",
+    "title": "Интервью → новости + видео-сценарий",
+    "oneLiner": "Интервью → новости + видео-сценарий",
+    "coverUrl": "",
+    "forWhom": [
+      "Редакция",
+      "Контент-менеджеры"
+    ],
+    "whoAffected": [
+      "Контент-команда"
+    ],
+    "whatImproves": [
+      "Скорость создания контента"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-559",
+    "authors": [
+      "L. Romanovich",
+      "R. Semeneev"
+    ],
+    "authorEmails": [
+      "l.romanovich@rantsports.com",
+      "r.semeneev@rantsports.com"
+    ],
+    "epicId": "HACK-559"
+  },
+  {
+    "id": "hack-197",
+    "title": "Календарь матчей и прогнозов — автообновление Google Таблицы",
+    "oneLiner": "Календарь матчей и прогнозов — автообновление Google Таблицы",
+    "coverUrl": "",
+    "forWhom": [
+      "Редакция",
+      "Контент-менеджеры"
+    ],
+    "whoAffected": [
+      "Контент-команда"
+    ],
+    "whatImproves": [
+      "Скорость создания контента"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-197",
+    "authors": [
+      "A. Moskvin"
+    ],
+    "authorEmails": [
+      "a.moskvin@rantsports.com"
+    ],
+    "epicId": "HACK-197"
+  },
+  {
+    "id": "hack-495",
+    "title": "Скилл: фото для обложек (спикер, клуб/федерация)",
+    "oneLiner": "Скилл: фото для обложек (спикер, клуб/федерация)",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Компания"
+    ],
+    "whatImproves": [
+      "Автоматизация процессов"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-495",
+    "authors": [
+      "I. Karsaulidze"
+    ],
+    "authorEmails": [
+      "i.karsaulidze@rantsports.com"
+    ],
+    "epicId": "HACK-495"
+  },
+  {
+    "id": "hack-204",
+    "title": "Ad Campaign Autopilot — автоматизация подготовки рекламных кампаний",
+    "oneLiner": "Ad Campaign Autopilot — автоматизация подготовки рекламных кампаний",
+    "coverUrl": "",
+    "forWhom": [
+      "Маркетинг"
+    ],
+    "whoAffected": [
+      "Бизнес"
+    ],
+    "whatImproves": [
+      "Эффективность рекламы"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-204",
+    "authors": [
+      "O. Bondar"
+    ],
+    "authorEmails": [
+      "o.bondar@rantsports.com"
+    ],
+    "epicId": "HACK-204"
+  },
+  {
+    "id": "hack-131",
+    "title": "Генератор промо-лендингов с бонусами через админку Sports Media",
+    "oneLiner": "Генератор промо-лендингов с бонусами через админку Sports Media",
+    "coverUrl": "",
+    "forWhom": [
+      "Маркетинг"
+    ],
+    "whoAffected": [
+      "Бизнес"
+    ],
+    "whatImproves": [
+      "Эффективность рекламы"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-131",
+    "authors": [
+      "A. Lonshakova"
+    ],
+    "authorEmails": [
+      "a.lonshakova@rantsports.com"
+    ],
+    "epicId": "HACK-131"
+  },
+  {
+    "id": "hack-414",
+    "title": "Мониторинг вакансий hh.ru ↔ сайт компании",
+    "oneLiner": "Мониторинг вакансий hh.ru ↔ сайт компании",
+    "coverUrl": "",
+    "forWhom": [
+      "HR"
+    ],
+    "whoAffected": [
+      "Вся компания"
+    ],
+    "whatImproves": [
+      "HR-процессы"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-414",
+    "authors": [
+      "A. Rukin"
+    ],
+    "authorEmails": [
+      "a.rukin@rantsports.com"
+    ],
+    "epicId": "HACK-414"
+  },
+  {
+    "id": "hack-29",
+    "title": "Props — внутреннее приложение благодарностей коллегам",
+    "oneLiner": "Props — внутреннее приложение благодарностей коллегам",
+    "coverUrl": "",
+    "forWhom": [
+      "HR"
+    ],
+    "whoAffected": [
+      "Вся компания"
+    ],
+    "whatImproves": [
+      "HR-процессы"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-29",
+    "authors": [
+      "I. Starikov"
+    ],
+    "authorEmails": [
+      "i.starikov@rantsports.com"
+    ],
+    "epicId": "HACK-29"
+  },
+  {
+    "id": "hack-434",
+    "title": "Автосбор regs/FTD из партнёрских API в Google Таблицу (пилот 3–5 партнёров, хакатон) + триггер Apps Script",
+    "oneLiner": "Автосбор regs/FTD из партнёрских API в Google Таблицу (пилот 3–5 партнёров, хакатон) + триггер Apps Script",
+    "coverUrl": "",
+    "forWhom": [
+      "Разработчики"
+    ],
+    "whoAffected": [
+      "Техническая команда"
+    ],
+    "whatImproves": [
+      "Процессы разработки"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-434",
+    "authors": [
+      "A. Makarenko"
+    ],
+    "authorEmails": [
+      "a.makarenko@rantsports.com"
+    ],
+    "epicId": "HACK-434"
+  },
+  {
+    "id": "hack-72",
+    "title": "Кастомные напоминалки о бизнес-процессах",
+    "oneLiner": "Кастомные напоминалки о бизнес-процессах",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Компания"
+    ],
+    "whatImproves": [
+      "Автоматизация процессов"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-72",
+    "authors": [
+      "N. Trukhin"
+    ],
+    "authorEmails": [
+      "n.trukhin@rantsports.com"
+    ],
+    "epicId": "HACK-72"
+  },
+  {
+    "id": "hack-95",
+    "title": "Discovery: Telegram-сигналы → скоринг → Discovery Backlog в YouTrack",
+    "oneLiner": "Discovery: Telegram-сигналы → скоринг → Discovery Backlog в YouTrack",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Пользователи сервиса"
+    ],
+    "whatImproves": [
+      "Автоматизация уведомлений"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-95",
+    "authors": [
+      "P. Sidogov"
+    ],
+    "authorEmails": [
+      "p.sidogov@rantsports.com"
+    ],
+    "epicId": "HACK-95"
+  },
+  {
+    "id": "hack-235",
+    "title": "Онбординг Back Office: скилл Cursor и материалы",
+    "oneLiner": "Онбординг Back Office: скилл Cursor и материалы",
+    "coverUrl": "",
+    "forWhom": [
+      "HR"
+    ],
+    "whoAffected": [
+      "Вся компания"
+    ],
+    "whatImproves": [
+      "HR-процессы"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-235",
+    "authors": [
+      "A. Shishko"
+    ],
+    "authorEmails": [
+      "a.shishko@rantsports.com"
+    ],
+    "epicId": "HACK-235"
+  },
+  {
+    "id": "hack-160",
+    "title": "SEO Sentinel — автономный мониторинг позиций, конкурентов и реагирование",
+    "oneLiner": "SEO Sentinel — автономный мониторинг позиций, конкурентов и реагирование",
+    "coverUrl": "",
+    "forWhom": [
+      "SEO-специалисты"
+    ],
+    "whoAffected": [
+      "SEO-отдел"
+    ],
+    "whatImproves": [
+      "SEO-эффективность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-160",
+    "authors": [
+      "Y. Bakanovski"
+    ],
+    "authorEmails": [
+      "y.bakanovski@rantsports.com"
+    ],
+    "epicId": "HACK-160"
+  },
+  {
+    "id": "hack-368",
+    "title": "Рынки предсказаний: темы, вероятности, актуальность",
+    "oneLiner": "Рынки предсказаний: темы, вероятности, актуальность",
+    "coverUrl": "",
+    "forWhom": [
+      "Пользователи",
+      "Фанаты"
+    ],
+    "whoAffected": [
+      "Аудитория сайта"
+    ],
+    "whatImproves": [
+      "Вовлечённость аудитории"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-368",
+    "authors": [
+      "E. Bagirov"
+    ],
+    "authorEmails": [
+      "e.bagirov@rantsports.com"
+    ],
+    "epicId": "HACK-368"
+  },
+  {
+    "id": "hack-116",
+    "title": "CSAT Metaratings: виджет, микросервис, Slack",
+    "oneLiner": "CSAT Metaratings: виджет, микросервис, Slack",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Компания"
+    ],
+    "whatImproves": [
+      "Автоматизация процессов"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-116",
+    "authors": [
+      "A. Chekanov"
+    ],
+    "authorEmails": [
+      "a.chekanov@rantsports.com"
+    ],
+    "epicId": "HACK-116"
+  },
+  {
+    "id": "hack-205",
+    "title": "Zero to Live: автоматизированный SEO-цикл от текста до индексации в Google",
+    "oneLiner": "Zero to Live: автоматизированный SEO-цикл от текста до индексации в Google",
+    "coverUrl": "",
+    "forWhom": [
+      "SEO-специалисты"
+    ],
+    "whoAffected": [
+      "SEO-отдел"
+    ],
+    "whatImproves": [
+      "SEO-эффективность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-205",
+    "authors": [
+      "A. Tyurin"
+    ],
+    "authorEmails": [
+      "a.tyurin@rantsports.com"
+    ],
+    "epicId": "HACK-205"
+  },
+  {
+    "id": "hack-182",
+    "title": "InsightsTube — дайджест идей с YouTube",
+    "oneLiner": "InsightsTube — дайджест идей с YouTube",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Компания"
+    ],
+    "whatImproves": [
+      "Автоматизация процессов"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-182",
+    "authors": [
+      "M. Rakutko"
+    ],
+    "authorEmails": [
+      "m.rakutko@rantsports.com"
+    ],
+    "epicId": "HACK-182"
+  },
+  {
+    "id": "hack-189",
+    "title": "Автоматизация внутренней перелинковки",
+    "oneLiner": "Автоматизация внутренней перелинковки",
+    "coverUrl": "",
+    "forWhom": [
+      "SEO-специалисты"
+    ],
+    "whoAffected": [
+      "SEO-отдел"
+    ],
+    "whatImproves": [
+      "SEO-эффективность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-189",
+    "authors": [
+      "S. Khartimeev"
+    ],
+    "authorEmails": [
+      "s.khartimeev@rantsports.com"
+    ],
+    "epicId": "HACK-189"
+  },
+  {
+    "id": "hack-88",
+    "title": "Гео-отчёты TelecomAsia: GSC → Sheets → email → YouTrack",
+    "oneLiner": "Гео-отчёты TelecomAsia: GSC → Sheets → email → YouTrack",
+    "coverUrl": "",
+    "forWhom": [
+      "Аналитики",
+      "Менеджеры"
+    ],
+    "whoAffected": [
+      "Бизнес"
+    ],
+    "whatImproves": [
+      "Аналитика и отчётность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-88",
+    "authors": [
+      "S. Kovaleva"
+    ],
+    "authorEmails": [
+      "s.kovaleva@rantsports.com"
+    ],
+    "epicId": "HACK-88"
+  },
+  {
+    "id": "hack-234",
+    "title": "Smart Regression System — Система интеллектуального регрессионного тестирования",
+    "oneLiner": "Smart Regression System — Система интеллектуального регрессионного тестирования",
+    "coverUrl": "",
+    "forWhom": [
+      "QA-инженеры"
+    ],
+    "whoAffected": [
+      "Разработка",
+      "QA"
+    ],
+    "whatImproves": [
+      "Качество тестирования"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-234",
+    "authors": [
+      "O. Iltsov"
+    ],
+    "authorEmails": [
+      "o.iltsov@rantsports.com"
+    ],
+    "epicId": "HACK-234"
+  },
+  {
+    "id": "hack-34",
+    "title": "Оценочный сервис для МЦ",
+    "oneLiner": "Оценочный сервис для МЦ",
+    "coverUrl": "",
+    "forWhom": [
+      "Продакт-менеджеры"
+    ],
+    "whoAffected": [
+      "Продуктовые команды"
+    ],
+    "whatImproves": [
+      "Точность оценок"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-34",
+    "authors": [
+      "D. Panferov"
+    ],
+    "authorEmails": [
+      "d.panferov@rantsports.com"
+    ],
+    "epicId": "HACK-34"
+  },
+  {
+    "id": "hack-542",
+    "title": "Дайджест алертов Telegram и задач YouTrack в Slack",
+    "oneLiner": "Дайджест алертов Telegram и задач YouTrack в Slack",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Пользователи сервиса"
+    ],
+    "whatImproves": [
+      "Автоматизация уведомлений"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-542",
+    "authors": [
+      "I. Salahov"
+    ],
+    "authorEmails": [
+      "i.salahov@rantsports.com"
+    ],
+    "epicId": "HACK-542"
+  },
+  {
+    "id": "hack-375",
+    "title": "Paul 2.0 — Осьминог-предсказатель ЧМ-2026",
+    "oneLiner": "Paul 2.0 — Осьминог-предсказатель ЧМ-2026",
+    "coverUrl": "",
+    "forWhom": [
+      "Пользователи",
+      "Фанаты"
+    ],
+    "whoAffected": [
+      "Аудитория сайта"
+    ],
+    "whatImproves": [
+      "Вовлечённость аудитории"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-375",
+    "authors": [
+      "B. Chervyakov"
+    ],
+    "authorEmails": [
+      "b.chervyakov@rantsports.com"
+    ],
+    "epicId": "HACK-375"
+  },
+  {
+    "id": "hack-780",
+    "title": "Актуализация обновляемого контента: пакет данных в Cursor (скилл/источники)",
+    "oneLiner": "Актуализация обновляемого контента: пакет данных в Cursor (скилл/источники)",
+    "coverUrl": "",
+    "forWhom": [
+      "Редакция",
+      "Контент-менеджеры"
+    ],
+    "whoAffected": [
+      "Контент-команда"
+    ],
+    "whatImproves": [
+      "Скорость создания контента"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-780",
+    "authors": [
+      "A. Levchenko"
+    ],
+    "authorEmails": [
+      "a.levchenko@rantsports.com"
+    ],
+    "epicId": "HACK-780"
+  },
+  {
+    "id": "hack-460",
+    "title": "Автоматическое расписание смен редакторов (YAML → Markdown)",
+    "oneLiner": "Автоматическое расписание смен редакторов (YAML → Markdown)",
+    "coverUrl": "",
+    "forWhom": [
+      "Редакция",
+      "Контент-менеджеры"
+    ],
+    "whoAffected": [
+      "Контент-команда"
+    ],
+    "whatImproves": [
+      "Скорость создания контента"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-460",
+    "authors": [
+      "D. Sadriev"
+    ],
+    "authorEmails": [
+      "d.sadriev@rantsports.com"
+    ],
+    "epicId": "HACK-460"
+  },
+  {
+    "id": "hack-65",
+    "title": "Impact site changes — веб-интерфейс с графиками",
+    "oneLiner": "Impact site changes — веб-интерфейс с графиками",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Компания"
+    ],
+    "whatImproves": [
+      "Автоматизация процессов"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-65",
+    "authors": [
+      "A. Koshkosh"
+    ],
+    "authorEmails": [
+      "a.koshkosh@rantsports.com"
+    ],
+    "epicId": "HACK-65"
+  },
+  {
+    "id": "hack-22",
+    "title": "Пайплайн Ahrefs CSV → SERP — приоритизация линкбилдинга",
+    "oneLiner": "Пайплайн Ahrefs CSV → SERP — приоритизация линкбилдинга",
+    "coverUrl": "",
+    "forWhom": [
+      "SEO-специалисты"
+    ],
+    "whoAffected": [
+      "SEO-отдел"
+    ],
+    "whatImproves": [
+      "SEO-эффективность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-22",
+    "authors": [
+      "M. Mann"
+    ],
+    "authorEmails": [
+      "m.mann@rantsports.com"
+    ],
+    "epicId": "HACK-22"
+  },
+  {
+    "id": "hack-399",
+    "title": "TZChecker – автопроверка текстов на соответствие ТЗ",
+    "oneLiner": "TZChecker – автопроверка текстов на соответствие ТЗ",
+    "coverUrl": "",
+    "forWhom": [
+      "Редакция",
+      "Контент-менеджеры"
+    ],
+    "whoAffected": [
+      "Контент-команда"
+    ],
+    "whatImproves": [
+      "Скорость создания контента"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-399",
+    "authors": [
+      "I. Karpenko"
+    ],
+    "authorEmails": [
+      "i.karpenko@rantsports.com"
+    ],
+    "epicId": "HACK-399"
+  },
+  {
+    "id": "hack-579",
+    "title": "Мониторинг разметки GA4 события click_on_bk_web (промоссылки → БК)",
+    "oneLiner": "Мониторинг разметки GA4 события click_on_bk_web (промоссылки → БК)",
+    "coverUrl": "",
+    "forWhom": [
+      "Аналитики",
+      "Менеджеры"
+    ],
+    "whoAffected": [
+      "Бизнес"
+    ],
+    "whatImproves": [
+      "Аналитика и отчётность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-579",
+    "authors": [
+      "A. Agafonova"
+    ],
+    "authorEmails": [
+      "a.agafonova@rantsports.com"
+    ],
+    "epicId": "HACK-579"
+  },
+  {
+    "id": "hack-213",
+    "title": "Квизы из новостей: ИИ, игра в браузере, выгрузка в админку",
+    "oneLiner": "Квизы из новостей: ИИ, игра в браузере, выгрузка в админку",
+    "coverUrl": "",
+    "forWhom": [
+      "Редакция",
+      "Контент-менеджеры"
+    ],
+    "whoAffected": [
+      "Контент-команда"
+    ],
+    "whatImproves": [
+      "Скорость создания контента"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-213",
+    "authors": [
+      "D. Zainullin"
+    ],
+    "authorEmails": [
+      "d.zainullin@rantsports.com"
+    ],
+    "epicId": "HACK-213"
+  },
+  {
+    "id": "hack-773",
+    "title": "Django Unchained — Autonomous Dev Pipeline",
+    "oneLiner": "Django Unchained — Autonomous Dev Pipeline",
+    "coverUrl": "",
+    "forWhom": [
+      "DevOps",
+      "Разработчики"
+    ],
+    "whoAffected": [
+      "Техническая команда"
+    ],
+    "whatImproves": [
+      "Инфраструктура"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-773",
+    "authors": [
+      "Chris"
+    ],
+    "authorEmails": [
+      "chris@rantsports.com"
+    ],
+    "epicId": "HACK-773"
+  },
+  {
+    "id": "hack-765",
+    "title": "Автопостинг новостей в Telegram, VK и MAX",
+    "oneLiner": "Автопостинг новостей в Telegram, VK и MAX",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Пользователи сервиса"
+    ],
+    "whatImproves": [
+      "Автоматизация уведомлений"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-765",
+    "authors": [
+      "R. Sadykov"
+    ],
+    "authorEmails": [
+      "r.sadykov@rantsports.com"
+    ],
+    "epicId": "HACK-765"
+  },
+  {
+    "id": "hack-720",
+    "title": "AI Forecast Editor — улучшение прогнозов через LLM",
+    "oneLiner": "AI Forecast Editor — улучшение прогнозов через LLM",
+    "coverUrl": "",
+    "forWhom": [
+      "Редакция",
+      "Контент-менеджеры"
+    ],
+    "whoAffected": [
+      "Контент-команда"
+    ],
+    "whatImproves": [
+      "Скорость создания контента"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-720",
+    "authors": [
+      "I. Kushmantsev"
+    ],
+    "authorEmails": [
+      "i.kushmantsev@rantsports.com"
+    ],
+    "epicId": "HACK-720"
+  },
+  {
+    "id": "hack-138",
+    "title": "Автономный агент микро-улучшений кода Sports Media",
+    "oneLiner": "Автономный агент микро-улучшений кода Sports Media",
+    "coverUrl": "",
+    "forWhom": [
+      "Разработчики"
+    ],
+    "whoAffected": [
+      "Техническая команда"
+    ],
+    "whatImproves": [
+      "Процессы разработки"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-138",
+    "authors": [
+      "D. Popov"
+    ],
+    "authorEmails": [
+      "d.popov@rantsports.com"
+    ],
+    "epicId": "HACK-138"
+  },
+  {
+    "id": "hack-256",
+    "title": "Slack alert triage agent: dossier, YouTrack draft, MR proposal",
+    "oneLiner": "Slack alert triage agent: dossier, YouTrack draft, MR proposal",
+    "coverUrl": "",
+    "forWhom": [
+      "Продакт-менеджеры",
+      "Тимлиды"
+    ],
+    "whoAffected": [
+      "Продуктовые команды"
+    ],
+    "whatImproves": [
+      "Управление задачами"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-256",
+    "authors": [
+      "D. Susha"
+    ],
+    "authorEmails": [
+      "d.susha@rantsports.com"
+    ],
+    "epicId": "HACK-256"
+  },
+  {
+    "id": "hack-43",
+    "title": "Sports Content Engine — программатический генератор SEO-страниц",
+    "oneLiner": "Sports Content Engine — программатический генератор SEO-страниц",
+    "coverUrl": "",
+    "forWhom": [
+      "SEO-специалисты"
+    ],
+    "whoAffected": [
+      "SEO-отдел"
+    ],
+    "whatImproves": [
+      "SEO-эффективность"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-43",
+    "authors": [
+      "Chris"
+    ],
+    "authorEmails": [
+      "chris@rantsports.com"
+    ],
+    "epicId": "HACK-43"
+  },
+  {
+    "id": "hack-535",
+    "title": "Duty-bot для triage HELP-тикетов DevOps",
+    "oneLiner": "Duty-bot для triage HELP-тикетов DevOps",
+    "coverUrl": "",
+    "forWhom": [
+      "Продакт-менеджеры",
+      "Тимлиды"
+    ],
+    "whoAffected": [
+      "Продуктовые команды"
+    ],
+    "whatImproves": [
+      "Управление задачами"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-535",
+    "authors": [
+      "I. Isakov"
+    ],
+    "authorEmails": [
+      "i.isakov@rantsports.com"
+    ],
+    "epicId": "HACK-535"
+  },
+  {
+    "id": "hack-488",
+    "title": "Hackathon Assessor",
+    "oneLiner": "Hackathon Assessor",
+    "coverUrl": "",
+    "forWhom": [
+      "Команда"
+    ],
+    "whoAffected": [
+      "Компания"
+    ],
+    "whatImproves": [
+      "Автоматизация процессов"
+    ],
+    "fullDescription": "",
+    "youtrackUrl": "https://youtrack.rantsports.com/issue/HACK-488",
+    "authors": [
+      "V. Hambardzumyan"
+    ],
+    "authorEmails": [
+      "v.hambardzumyan@rantsports.com"
+    ],
+    "epicId": "HACK-488"
+  }
+]
