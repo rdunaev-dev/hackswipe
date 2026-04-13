@@ -19,17 +19,19 @@ import projectsSeed from "@/data/projects.json";
 
 export const dynamic = "force-dynamic";
 
+let _seeded = false;
+
 export async function GET(req: NextRequest) {
   const email = getEmailFromCookie(req);
   if (!email) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  let allProjects = await getAllProjects();
-  if (allProjects.length === 0) {
+  if (!_seeded) {
     await seedFromJson(projectsSeed as Project[]);
-    allProjects = await getAllProjects();
+    _seeded = true;
   }
+  const allProjects = await getAllProjects();
 
   const currentRound = await getCurrentRound();
 
