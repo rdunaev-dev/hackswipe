@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="antialiased">
         <Providers>
-          <main className="min-h-screen min-h-[100dvh] flex flex-col">{children}</main>
+          <main className="h-screen h-[100dvh] flex flex-col overflow-hidden">{children}</main>
         </Providers>
       </body>
     </html>
