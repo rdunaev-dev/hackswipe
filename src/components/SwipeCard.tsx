@@ -74,38 +74,31 @@ export default function SwipeCard({ project, onSwipe, onDetails }: SwipeCardProp
 
         {/* Content */}
         <div className="px-5 pb-5 -mt-8 relative z-10">
-          <h2 className="text-xl font-bold text-white mb-1 leading-tight">{project.title}</h2>
-          <p className="text-sm text-slate-400 mb-4 leading-snug">{project.oneLiner}</p>
+          {project.epicId && (
+            <span className="inline-block text-[10px] font-mono text-cyan-400/70 bg-cyan-400/10 px-2 py-0.5 rounded-md mb-2">
+              {project.epicId}
+            </span>
+          )}
+          <h2 className="text-xl font-bold text-white mb-2 leading-tight">{project.title}</h2>
+          <p className="text-sm text-slate-300 mb-3 leading-relaxed line-clamp-3">{project.oneLiner}</p>
 
-          <div className="space-y-2.5">
-            <InfoBlock
-              icon="👥"
-              label="Для кого"
-              values={project.forWhom}
-              color="text-cyan-400"
-            />
-            <InfoBlock
-              icon="🎯"
-              label="Кого затронет"
-              values={project.whoAffected}
-              color="text-purple-400"
-            />
-            <InfoBlock
-              icon="⚡"
-              label="Что улучшит"
-              values={project.whatImproves}
-              color="text-emerald-400"
-            />
-          </div>
+          {project.authors.length > 0 && (
+            <div className="flex items-center gap-1.5 mb-3">
+              <span className="text-slate-600 text-xs">&#x1f464;</span>
+              <span className="text-xs text-slate-500 truncate">
+                {project.authors.join(", ")}
+              </span>
+            </div>
+          )}
 
           <button
             onClick={(e) => {
               e.stopPropagation();
               onDetails();
             }}
-            className="mt-4 w-full py-2 rounded-xl text-sm font-medium text-slate-400 bg-white/5 hover:bg-white/10 active:bg-white/15 transition-colors"
+            className="w-full py-2 rounded-xl text-sm font-medium text-slate-400 bg-white/5 hover:bg-white/10 active:bg-white/15 transition-colors"
           >
-            Подробнее →
+            Подробнее
           </button>
         </div>
 
@@ -129,27 +122,5 @@ export default function SwipeCard({ project, onSwipe, onDetails }: SwipeCardProp
         </motion.div>
       </div>
     </motion.div>
-  );
-}
-
-function InfoBlock({
-  icon,
-  label,
-  values,
-  color,
-}: {
-  icon: string;
-  label: string;
-  values: string[];
-  color: string;
-}) {
-  return (
-    <div className="flex items-start gap-2.5">
-      <span className="text-base mt-0.5 shrink-0">{icon}</span>
-      <div className="min-w-0">
-        <span className={`text-xs font-semibold uppercase tracking-wider ${color}`}>{label}</span>
-        <p className="text-sm text-slate-300 leading-snug">{values.join(" · ")}</p>
-      </div>
-    </div>
   );
 }

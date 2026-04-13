@@ -52,7 +52,7 @@ export default function ProjectDetails({ project, onClose, onBank, showBankButto
             onClick={onClose}
             className="absolute top-4 right-4 w-10 h-10 rounded-full glass flex items-center justify-center text-white text-lg"
           >
-            ×
+            &#xd7;
           </button>
         </div>
 
@@ -62,18 +62,14 @@ export default function ProjectDetails({ project, onClose, onBank, showBankButto
               {project.epicId}
             </span>
           )}
-          <h2 className="text-2xl font-bold text-white mb-1">{project.title}</h2>
-          <p className="text-sm text-slate-400 mb-5">{project.oneLiner}</p>
+          <h2 className="text-2xl font-bold text-white mb-2">{project.title}</h2>
+          <p className="text-sm text-slate-300 leading-relaxed mb-5">{project.oneLiner}</p>
 
-          <div className="space-y-3 mb-6">
-            <DetailBlock icon="👥" label="Для кого" values={project.forWhom} />
-            <DetailBlock icon="🎯" label="Кого затронет" values={project.whoAffected} />
-            <DetailBlock icon="⚡" label="Что улучшит" values={project.whatImproves} />
-          </div>
-
-          <div className="text-sm text-slate-300 leading-relaxed mb-6">
-            {project.fullDescription}
-          </div>
+          {project.fullDescription && (
+            <div className="text-sm text-slate-400 leading-relaxed mb-6 whitespace-pre-line">
+              {project.fullDescription}
+            </div>
+          )}
 
           {project.authors.length > 0 && (
             <div className="mb-5">
@@ -119,18 +115,6 @@ export default function ProjectDetails({ project, onClose, onBank, showBankButto
   );
 }
 
-function DetailBlock({ icon, label, values }: { icon: string; label: string; values: string[] }) {
-  return (
-    <div className="flex items-start gap-2.5 bg-white/[0.03] rounded-xl px-3 py-2.5">
-      <span className="text-base mt-0.5">{icon}</span>
-      <div>
-        <span className="text-xs font-semibold uppercase tracking-wider text-slate-500">{label}</span>
-        <p className="text-sm text-slate-300">{values.join(" · ")}</p>
-      </div>
-    </div>
-  );
-}
-
 function LinkPill({ href, label }: { href: string; label: string }) {
   return (
     <a
@@ -139,7 +123,7 @@ function LinkPill({ href, label }: { href: string; label: string }) {
       rel="noopener noreferrer"
       className="text-xs px-3 py-1.5 rounded-full glass text-cyan-400 hover:text-cyan-300 transition-colors"
     >
-      {label} ↗
+      {label} &#x2197;
     </a>
   );
 }
