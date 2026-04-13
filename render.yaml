@@ -10,7 +10,7 @@ services:
     name: hackswipe
     runtime: node
     buildCommand: npm ci && npm run build
-    startCommand: npm start
+    startCommand: npx next start -H 0.0.0.0 -p $PORT
     envVars:
       - key: DATABASE_URL
         fromDatabase:
